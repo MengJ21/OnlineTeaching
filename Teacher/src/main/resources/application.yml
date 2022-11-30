@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: Teacher
+  cloud:
+    #配置服务管理nacos
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      #配置服务限流sentinel
+    sentinel:
+      transport:
+        #sentinel服务默认端口，访问localhost:8080管理服务。
+        dashboard: localhost:8080
+server:
+  port: 8081
+#使用sentinel要开放所有接口
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
