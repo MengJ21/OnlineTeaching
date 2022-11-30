@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.teacher.mapper.courseMapper">
+
+    <resultMap id="Course" type="com.example.commons.entity.Course"/>
+    <parameterMap id="Course" type="com.example.commons.entity.Course"/>
+
+    <select id="getCourseByTeacherId" resultMap="Course">
+        select * from course where teacher_id = #{teacherId}
+    </select>
+
+    <update id="updateStudent" >
+        update course set course_student_num = #{courseStudentNum} where course_id = #{courseId}
+    </update>
+
+    <select id="getCourseByType" resultMap="Course">
+        select * from course where course_type = #{courseType}
+    </select>
+
+    <select id="getMyCourse" resultMap="Course">
+        select *
+        from course
+        where course_id in(
+            select course_id
+            from course_student
+            where student_id = #{studentId}
+            )
+    </select>
+</mapper>
