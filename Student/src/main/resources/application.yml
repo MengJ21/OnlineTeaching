@@ -27,3 +27,15 @@ management:
     web:
       exposure:
         include: '*'
+# 配置环境运行python或c++文件
+run:
+  scripts:
+    python: C:\python\python3.10\python.exe
+config:
+  jwt:
+    # 加密密钥
+    secret: abcdefg1234567
+    # token有效时长
+    expire: 3600
+    # header 名称
+    header: token

@@ -14,15 +14,6 @@
     <name>OnlineTeaching</name>
     <description>OnlineTeaching</description>
     <packaging>pom</packaging>
-<<<<<<< HEAD
-=======
-    <modules>
-        <module>commons</module>
-        <module>Admin</module>
-        <module>Student</module>
-        <module>Teacher</module>
-    </modules>
->>>>>>> 5b85ce4 (Initial commit)
     <properties>
         <java.version>11</java.version>
     </properties>
@@ -35,39 +26,11 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-loadbalancer</artifactId>
         </dependency>
-<<<<<<< HEAD
 
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
-=======
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <scope>runtime</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid</artifactId>
-            <version>1.1.14</version>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid-spring-boot-starter</artifactId>
-            <version>1.2.6</version>
-        </dependency>
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>3.4.3.4</version>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.12</version>
-            <scope>provided</scope>
->>>>>>> 5b85ce4 (Initial commit)
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -80,13 +43,6 @@
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
             <version>2021.1</version>
         </dependency>
-<<<<<<< HEAD
-=======
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
-        </dependency>
->>>>>>> 5b85ce4 (Initial commit)
     </dependencies>
 
     <dependencyManagement>
