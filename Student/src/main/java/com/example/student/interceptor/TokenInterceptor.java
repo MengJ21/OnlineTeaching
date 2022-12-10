@@ -43,6 +43,7 @@ public class TokenInterceptor extends HandlerInterceptorAdapter {
         Claims claims = null;
         try{
             claims = jwtConfig.getTokenClaim(token);
+            log.info("claims: " + claims);
             if(claims == null || jwtConfig.isTokenExpired(claims.getExpiration())){
                 throw new SignatureException(jwtConfig.getHeader() + "失效，请重新登录。");
             }
@@ -52,6 +53,7 @@ public class TokenInterceptor extends HandlerInterceptorAdapter {
 
         /** 设置 identityId 用户身份ID */
         request.setAttribute("identityId", claims.getSubject());
+        log.info("token验证成功");
         return true;
     }
 }

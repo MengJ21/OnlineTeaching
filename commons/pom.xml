@@ -14,7 +14,7 @@
     <name>commons</name>
     <description>commons</description>
     <properties>
-        <java.version>19</java.version>
+        <java.version>11</java.version>
     </properties>
     <dependencies>
         <dependency>
@@ -55,8 +55,11 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                </configuration>
             </plugin>
         </plugins>
+
     </build>
 
 </project>

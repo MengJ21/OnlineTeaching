@@ -28,8 +28,7 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
             <version>2.4.2</version>
         </dependency>
-<<<<<<< HEAD
-=======
+
         <dependency>
             <groupId>com.example</groupId>
             <artifactId>commons</artifactId>
@@ -54,7 +53,6 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
->>>>>>> 5b85ce4 (Initial commit)
     </dependencies>
     <build>
         <plugins>

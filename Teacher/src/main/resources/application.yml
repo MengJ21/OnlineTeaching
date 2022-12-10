@@ -1,15 +1,12 @@
 spring:
   application:
     name: Teacher
-<<<<<<< HEAD
-=======
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/ECDB?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
     username: root
-    password: ZMLQQQ
+    password: '011006'
     type: com.alibaba.druid.pool.DruidDataSource
->>>>>>> 5b85ce4 (Initial commit)
   cloud:
     #配置服务管理nacos
     nacos:
