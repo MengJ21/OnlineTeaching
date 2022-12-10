@@ -1,15 +1,20 @@
 package com.example.teacher.controller;
+import com.example.commons.config.JwtConfig;
 import com.example.commons.entity.Course;
 import com.example.commons.entity.Student;
 import com.example.commons.entity.Teacher;
 import com.example.commons.entity.chapter;
+import com.example.teacher.entity.dto.LoginDTO;
 import com.example.teacher.service.OssUploadService;
 import com.example.teacher.service.impl.ITeacherServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 public class teacherController {
@@ -17,19 +22,30 @@ public class teacherController {
     ITeacherServiceImpl iTeacherService;
     @Autowired
     OssUploadService ossUploadService;
+    @Autowired
+    JwtConfig jwtConfig;
 
     Teacher teacher = new Teacher();
 
-    @GetMapping("/teacher/login/{teacherId}/{password}")
-    public String login(@PathVariable String teacherId,@PathVariable String password){
-        this.teacher = (Teacher) iTeacherService.login(teacherId,password);
-        if(teacher==null){
-            return "please login in first";
-        }else {
-            return "welcome" + teacher.getTeacherName();
+    @PostMapping ("/teacher/login")
+    public ResponseEntity<Object> teacherLogin(@RequestBody LoginDTO loginDTO){
+        // 将学生的id存入token中，作为以后访问接口的凭证。
+        String token = jwtConfig.createToken(loginDTO.getTeacherId());
+        // 根据用户名密码获取学生具体信息。
+        Teacher teacher = iTeacherService.login(loginDTO.getTeacherId(),loginDTO.getPassword());
+        // 将具体信息和token一起返回给前端。
+        Map<String,Object> userInfo = new HashMap<>(2) {{
+            put("token", token);
+            put("user", teacher);
+        }};
+        if(teacher == null){
+            // 这里用ResponseEntity来封装返回值。
+            return ResponseEntity.ok("登录失败！");
+        }
+        else {
+            return  ResponseEntity.ok(userInfo);
         }
     }
-
     @PostMapping("/teacher/createCourse")
     public String createCourse(@RequestBody Course course){
         return iTeacherService.creatCourse(course);

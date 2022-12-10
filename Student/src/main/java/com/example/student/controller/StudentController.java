@@ -1,9 +1,10 @@
 package com.example.student.controller;
 
+
+import com.example.commons.config.JwtConfig;
 import com.example.commons.entity.Course;
 import com.example.commons.entity.Student;
 import com.example.commons.entity.Teacher;
-import com.example.student.config.JwtConfig;
 import com.example.student.entity.dto.LoginDTO;
 import com.example.student.service.impl.IStudentServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
