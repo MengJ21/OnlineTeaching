@@ -3,11 +3,11 @@ package com.example.commons.interceptor;
 import com.example.commons.config.JwtConfig;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.SignatureException;
+import javax.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
-import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -52,7 +52,8 @@ public class TokenInterceptor extends HandlerInterceptorAdapter {
         }
 
         /** 设置 identityId 用户身份ID */
-        request.setAttribute("identityId", claims.getSubject());
+        request.setAttribute("identityId", claims.getId());
+        request.setAttribute("identity",claims.getSubject());
         log.info("token验证成功");
         return true;
     }

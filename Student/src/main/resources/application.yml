@@ -6,9 +6,9 @@ spring:
   # 配置nacos管理服务。
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/ECDB?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+    url: jdbc:mysql://localhost:3306/onlineteach?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
     username: root
-    password: '011006'
+    password: ZMLQQQ
     type: com.alibaba.druid.pool.DruidDataSource
   cloud:
     nacos:
@@ -36,3 +36,12 @@ config:
     expire: 3600
     # header 名称
     header: Token
+# 微服务之间传递token
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          strategy: SEMAPHORE  #加上这个就可以获取到HttpServletRequest
+          thread:
+            timeoutInMilliseconds: 10000

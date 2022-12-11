@@ -4,10 +4,12 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.example.commons.entity.*;
 import com.example.teacher.mapper.*;
 import com.example.teacher.service.ITeacherService;
+import com.example.teacher.service.OssDownloadService;
 import com.example.teacher.service.client.StudentClient;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 @Service
@@ -25,6 +27,8 @@ public class ITeacherServiceImpl extends ServiceImpl<teacherMapper, Teacher> imp
     courseStudentMapper courseStudentMapper;
     @Resource
     experimentMapper experimentMapper;
+    @Resource
+    OssDownloadService ossDownloadService;
     @Override
     public Teacher login(String teacherId, String password) {
         return teacherMapper.findTeacherByTeacherIdAndPassword(teacherId,password);
@@ -75,7 +79,7 @@ public class ITeacherServiceImpl extends ServiceImpl<teacherMapper, Teacher> imp
     }
 
     @Override
-    public String createChapter(experiment experiment) {
+    public String createExperiment(experiment experiment) {
         if(experimentMapper.insert(experiment)!=0){
             return "创建实验成功！";
         }else {
@@ -83,4 +87,14 @@ public class ITeacherServiceImpl extends ServiceImpl<teacherMapper, Teacher> imp
         }
     }
 
+    @Override
+    public boolean createFile(String experimentId, String fileUrl, String fileName) {
+        return experimentMapper.setFile(experimentId,fileUrl,fileName);
+    }
+
+    @Override
+    public void downLoad(String experimentId, HttpServletResponse response) {
+        experiment experiment = experimentMapper.selectById(experimentId);
+        ossDownloadService.download(response,experiment.getFileUrl(),experiment.getFileName());
+    }
 }

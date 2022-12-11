@@ -13,4 +13,5 @@ import lombok.Setter;
 public class LoginDTO {
     private String studentId;
     private String password;
+    private String identity;
 }

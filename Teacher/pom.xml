@@ -28,7 +28,6 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
             <version>2.4.2</version>
         </dependency>
-
         <dependency>
             <groupId>com.example</groupId>
             <artifactId>commons</artifactId>

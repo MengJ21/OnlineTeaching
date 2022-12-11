@@ -103,11 +103,10 @@ public class OssUploadService {
             String filename = UUID.randomUUID().toString();
             String suffix = originname.substring(originname.lastIndexOf("."));
             String newName = filename + suffix;
-            String fileUrl = courseId + "course/" + chapterId + "chapter/实验" + experimentId + "/" + datePath+"/"+newName;
+            String fileUrl = courseId + "course/" + chapterId + "chapter/实验" + experimentId + "/" + datePath+"/"+originname;
             // 创建PutObject请求。上传到阿里服务器
             ossClient.putObject(bucketName, fileUrl, inputStream);
-
-            return "https://"+ bucketName + "." + endpoint + "/" + newName;
+            return fileUrl;
         } catch (OSSException oe) {
             System.out.println("Caught an OSSException, which means your request made it to OSS, "
                     + "but was rejected with an error response for some reason.");
