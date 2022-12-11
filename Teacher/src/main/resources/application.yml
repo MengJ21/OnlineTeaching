@@ -1,4 +1,8 @@
+web:
+  upload-path: C:/OnlineTeaching_images
 spring:
+  mvc:
+    static-path-pattern: /**
   application:
     name: Teacher
   datasource:
@@ -17,6 +21,9 @@ spring:
       transport:
         #sentinel服务默认端口，访问localhost:8080管理服务。
         dashboard: localhost:8080
+  web:
+    resources:
+      static-locations: file:${web.upload-path},classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/
 server:
   port: 8081
 #使用sentinel要开放所有接口
@@ -33,3 +40,4 @@ config:
     expire: 3600
     # header 名称
     header: Token
+

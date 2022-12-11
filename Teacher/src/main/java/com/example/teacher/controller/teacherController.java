@@ -4,6 +4,7 @@ import com.example.commons.entity.Course;
 import com.example.commons.entity.Student;
 import com.example.commons.entity.Teacher;
 import com.example.commons.entity.chapter;
+import com.example.commons.util.UploadFileUtil;
 import com.example.teacher.entity.dto.LoginDTO;
 import com.example.teacher.service.OssUploadService;
 import com.example.teacher.service.impl.ITeacherServiceImpl;
@@ -24,6 +25,8 @@ public class teacherController {
     OssUploadService ossUploadService;
     @Autowired
     JwtConfig jwtConfig;
+    @Autowired
+    UploadFileUtil uploadFile;
 
     Teacher teacher = new Teacher();
 
@@ -45,6 +48,11 @@ public class teacherController {
         else {
             return  ResponseEntity.ok(userInfo);
         }
+    }
+
+    @PostMapping("/teacher/uploadImage")
+    public String uploadImage(@RequestPart("file") MultipartFile file) {
+        return uploadFile.uploadFile(file);
     }
     @PostMapping("/teacher/createCourse")
     public String createCourse(@RequestBody Course course){

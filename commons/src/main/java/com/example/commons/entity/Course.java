@@ -16,6 +16,16 @@ public class Course {
     private String courseType;
     private int courseStudentNum;
 
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
+
+    private String imageUrl;
+
     public String getCourseId() {
         return courseId;
     }
