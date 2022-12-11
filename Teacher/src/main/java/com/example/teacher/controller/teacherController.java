@@ -30,7 +30,7 @@ public class teacherController {
     @PostMapping ("/teacher/login")
     public ResponseEntity<Object> teacherLogin(@RequestBody LoginDTO loginDTO){
         // 将学生的id存入token中，作为以后访问接口的凭证。
-        String token = jwtConfig.createToken(loginDTO.getTeacherId());
+        String token = jwtConfig.createToken(loginDTO.getTeacherId(),"老师");
         // 根据用户名密码获取学生具体信息。
         Teacher teacher = iTeacherService.login(loginDTO.getTeacherId(),loginDTO.getPassword());
         // 将具体信息和token一起返回给前端。
