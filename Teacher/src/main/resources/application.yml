@@ -1,15 +1,11 @@
-web:
-  upload-path: C:/OnlineTeaching_images
 spring:
-  mvc:
-    static-path-pattern: /**
   application:
     name: Teacher
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/onlineteach?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+    url: jdbc:mysql://localhost:3306/ECDB?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
     username: root
-    password: ZMLQQQ
+    password: '011006'
     type: com.alibaba.druid.pool.DruidDataSource
   cloud:
     #配置服务管理nacos
@@ -21,9 +17,6 @@ spring:
       transport:
         #sentinel服务默认端口，访问localhost:8080管理服务。
         dashboard: localhost:8080
-  web:
-    resources:
-      static-locations: file:${web.upload-path},classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/
 server:
   port: 8081
 #使用sentinel要开放所有接口
@@ -40,12 +33,3 @@ config:
     expire: 3600
     # header 名称
     header: Token
-# 微服务之间传递token
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          strategy: SEMAPHORE  #加上这个就可以获取到HttpServletRequest
-          thread:
-            timeoutInMilliseconds: 10000
