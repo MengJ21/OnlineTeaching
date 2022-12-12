@@ -130,7 +130,7 @@ public class StudentController {
         return iStudentService.getMyCourse(jwtConfig.getUserIdFromToken(token));
     }
     //上传实验报告
-    @PostMapping("/teacher/upload/file/{courseId}/{chapterId}/{experimentId}")
+    @PostMapping("/student/upload/file/{courseId}/{chapterId}/{experimentId}")
     public String upload(HttpServletRequest request,@RequestPart("file")MultipartFile multipartFile,@PathVariable String courseId,@PathVariable String chapterId,@PathVariable String experimentId){
         String token = request.getHeader(jwtConfig.getHeader());
         if(!jwtConfig.getUserIdentityFromToken(token).equals("学生")){
@@ -181,7 +181,7 @@ public class StudentController {
         return iStudentService.submitExperiment(studentExperiment);
     }
     //下载老师上传的实验要求文件
-    @GetMapping("/teacher/download/file/{experimentId}")
+    @GetMapping("/student/download/file/{experimentId}")
     public void downLoad(@PathVariable String experimentId, HttpServletResponse response,HttpServletRequest request){
         String token = request.getHeader(jwtConfig.getHeader());
         if(!jwtConfig.getUserIdentityFromToken(token).equals("学生")){
@@ -224,5 +224,14 @@ public class StudentController {
             return null;
         }
         return iStudentService.getMyExperiment(experimentId,jwtConfig.getUserIdFromToken(token));
+    }
+    //通过名字来搜索课程
+    @GetMapping("/student/selectCourseByName/{courseName}")
+    public Course selectCourseByName(@PathVariable String courseName,HttpServletRequest request){
+        String token = request.getHeader(jwtConfig.getHeader());
+        if(!jwtConfig.getUserIdentityFromToken(token).equals("学生")){
+            return null;
+        }
+        return iStudentService.selectCourseByName(courseName);
     }
 }

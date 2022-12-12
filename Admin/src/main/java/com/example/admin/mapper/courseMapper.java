@@ -1,4 +1,4 @@
-package com.example.student.mapper;
+package com.example.admin.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.example.commons.entity.Course;
@@ -14,5 +14,6 @@ public interface courseMapper extends BaseMapper<Course> {
     boolean updateStudent(String courseId, int courseStudentNum);
     List<Course> getCourseByType(String courseType);
     List<Course> getMyCourse(String studentId);
+    int selectCourseNumByExperiment(String experimentId);
     Course selectCourseByName(String courseName);
 }

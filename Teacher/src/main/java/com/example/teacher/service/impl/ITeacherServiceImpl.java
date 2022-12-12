@@ -63,11 +63,20 @@ public class ITeacherServiceImpl extends ServiceImpl<teacherMapper, Teacher> imp
 
     @Override
     public String deleteCourse(String courseId) {
-        int i = courseMapper.deleteById(courseId);
-        if(i!=0&&courseStudentMapper.deleteRelation(courseId)){
-            return "删除课程成功！";
+        if(courseMapper.selectById(courseId).getCourseStudentNum()==0){
+            int i = courseMapper.deleteById(courseId);
+            if(i!=0){
+                return "删除课程成功！";
+            }else {
+                return "删除课程失败！";
+            }
         }else {
-            return "删除课程失败！";
+            int i = courseMapper.deleteById(courseId);
+            if(i!=0&&courseStudentMapper.deleteRelation(courseId)){
+                return "删除课程成功！";
+            }else {
+                return "删除课程失败！";
+            }
         }
     }
 
@@ -97,7 +106,7 @@ public class ITeacherServiceImpl extends ServiceImpl<teacherMapper, Teacher> imp
     @Override
     public void downLoad(String experimentId,String studentId, HttpServletResponse response) {
         StudentExperiment studentExperiment = studentExperimentMapper.ifStudentExperiment(experimentId,studentId);
-        ossDownloadService.download(response,studentExperiment.getFile_url(),studentExperiment.getFile_name());
+        ossDownloadService.download(response,studentExperiment.getFileUrl(),studentExperiment.getFileName());
     }
 
     @Override

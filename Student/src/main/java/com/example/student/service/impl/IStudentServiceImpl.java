@@ -157,6 +157,11 @@ public class IStudentServiceImpl extends ServiceImpl<studentMapper, Student> imp
         return studentExperimentMapper.ifStudentExperiment(experimentId,studentId);
     }
 
+    @Override
+    public Course selectCourseByName(String courseName) {
+        return courseMapper.selectCourseByName(courseName);
+    }
+
     public String upload(@RequestPart("file") MultipartFile multipartFile, @PathVariable String courseId, @PathVariable String chapterId, @PathVariable String experimentId){
         return teacherClient.upload(multipartFile,courseId,chapterId,experimentId);
     }

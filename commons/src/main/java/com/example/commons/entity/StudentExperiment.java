@@ -12,8 +12,8 @@ public class StudentExperiment {
     private String experimentId;
     private String studentId;
     private String experiment_content;
-    private String file_url;
-    private String file_name;
+    private String fileUrl;
+    private String fileName;
     private int score;
     private Boolean state;
 
@@ -57,20 +57,20 @@ public class StudentExperiment {
         this.experiment_content = experiment_content;
     }
 
-    public String getFile_url() {
-        return file_url;
+    public String getFileUrl() {
+        return fileUrl;
     }
 
-    public void setFile_url(String file_url) {
-        this.file_url = file_url;
+    public void setFileUrl(String fileUrl) {
+        this.fileUrl = fileUrl;
     }
 
-    public String getFile_name() {
-        return file_name;
+    public String getFileName() {
+        return fileName;
     }
 
-    public void setFile_name(String file_name) {
-        this.file_name = file_name;
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
     }
 
     public int getScore() {

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.admin.mapper.courseStudentMapper">
+
+    <resultMap id="courseStudent" type="com.example.commons.entity.courseStudent"/>
+    <parameterMap id="courseStudent" type="com.example.commons.entity.courseStudent"/>
+    <resultMap id="Student" type="com.example.commons.entity.Student"/>
+
+    <select id="selectRelation" resultMap="courseStudent">
+        select * from course_student where course_id = #{courseId} and student_id = #{studentId}
+    </select>
+
+    <select id="selectStudentIdByCourseId" resultMap="Student">
+        select * from student where student_id in (select student_id from course_student where course_id= #{courseId})
+    </select>
+
+    <delete id="deleteRelation">
+        delete from course_student where course_id = #{courseId}
+    </delete>
+
+</mapper>

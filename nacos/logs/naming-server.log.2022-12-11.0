@@ -1,0 +1,186 @@
+2022-12-11 15:25:00,949 INFO GlobalConfig{taskDispatchPeriod=2000, batchSyncKeyCount=1000, syncRetryDelay=5000, dataWarmup=false, expireInstance=true, loadDataRetryDelayMillis=30000}
+
+2022-12-11 15:25:01,711 INFO open empty service auto clean job, initialDelay : 50000 ms, period : 30000 ms
+
+2022-12-11 15:25:01,712 INFO listen for service meta change
+
+2022-12-11 15:28:59,813 INFO GlobalConfig{taskDispatchPeriod=2000, batchSyncKeyCount=1000, syncRetryDelay=5000, dataWarmup=false, expireInstance=true, loadDataRetryDelayMillis=30000}
+
+2022-12-11 15:29:00,295 INFO open empty service auto clean job, initialDelay : 50000 ms, period : 30000 ms
+
+2022-12-11 15:29:00,296 INFO listen for service meta change
+
+2022-12-11 17:12:23,457 INFO GlobalConfig{taskDispatchPeriod=2000, batchSyncKeyCount=1000, syncRetryDelay=5000, dataWarmup=false, expireInstance=true, loadDataRetryDelayMillis=30000}
+
+2022-12-11 17:12:23,928 INFO open empty service auto clean job, initialDelay : 50000 ms, period : 30000 ms
+
+2022-12-11 17:12:23,928 INFO listen for service meta change
+
+2022-12-11 17:15:23,347 INFO GlobalConfig{taskDispatchPeriod=2000, batchSyncKeyCount=1000, syncRetryDelay=5000, dataWarmup=false, expireInstance=true, loadDataRetryDelayMillis=30000}
+
+2022-12-11 17:15:23,861 INFO open empty service auto clean job, initialDelay : 50000 ms, period : 30000 ms
+
+2022-12-11 17:15:23,862 INFO listen for service meta change
+
+2022-12-11 17:15:28,332 INFO [NACOS-DISTRO] healthy server list changed, old: [10.100.239.118:8848], new: [10.100.239.118:8848]
+
+2022-12-11 17:15:41,071 INFO creating empty service public:DEFAULT_GROUP@@Student
+
+2022-12-11 17:15:41,241 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@Student","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1670750141072,"checksum":"65061c903fa98398002c5663e103c2d7","clusterMap":{},"empty":true}
+
+2022-12-11 17:15:41,246 WARN cluster: DEFAULT not found, ip: {"instanceId":"10.100.239.118#8082#DEFAULT#DEFAULT_GROUP@@Student","ip":"10.100.239.118","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@Student","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1670750141058,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}, will create new cluster with default configuration.
+
+2022-12-11 17:15:41,250 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Student, value: {"instanceList":[{"instanceId":"10.100.239.118#8082#DEFAULT#DEFAULT_GROUP@@Student","ip":"10.100.239.118","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@Student","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1670750141058,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2022-12-11 17:15:59,050 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Student, value: {"instanceList":[]}
+
+2022-12-11 17:16:13,327 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Student, value: {"instanceList":[{"instanceId":"10.100.239.118#8082#DEFAULT#DEFAULT_GROUP@@Student","ip":"10.100.239.118","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@Student","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1670750173327,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2022-12-11 17:17:19,058 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Student, value: {"instanceList":[]}
+
+2022-12-11 17:17:35,497 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Student, value: {"instanceList":[{"instanceId":"10.100.239.118#8082#DEFAULT#DEFAULT_GROUP@@Student","ip":"10.100.239.118","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@Student","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1670750255497,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2022-12-11 17:18:50,633 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Student, value: {"instanceList":[]}
+
+2022-12-11 17:19:04,713 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Student, value: {"instanceList":[{"instanceId":"10.100.239.118#8082#DEFAULT#DEFAULT_GROUP@@Student","ip":"10.100.239.118","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@Student","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1670750344713,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2022-12-11 17:26:40,760 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Student, value: {"instanceList":[]}
+
+2022-12-11 17:27:00,106 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Student, value: {"instanceList":[{"instanceId":"10.100.239.118#8082#DEFAULT#DEFAULT_GROUP@@Student","ip":"10.100.239.118","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@Student","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1670750820106,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2022-12-11 17:41:33,889 INFO creating empty service public:DEFAULT_GROUP@@Teacher
+
+2022-12-11 17:41:33,890 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@Teacher","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1670751693889,"checksum":"03f481e30f21bfd0983a6a8981bbac91","clusterMap":{},"empty":true}
+
+2022-12-11 17:41:33,890 WARN cluster: DEFAULT not found, ip: {"instanceId":"10.100.239.118#8081#DEFAULT#DEFAULT_GROUP@@Teacher","ip":"10.100.239.118","port":8081,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@Teacher","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1670751693889,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}, will create new cluster with default configuration.
+
+2022-12-11 17:41:33,890 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Teacher, value: {"instanceList":[{"instanceId":"10.100.239.118#8081#DEFAULT#DEFAULT_GROUP@@Teacher","ip":"10.100.239.118","port":8081,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@Teacher","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1670751693889,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2022-12-11 17:41:50,377 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Teacher, value: {"instanceList":[]}
+
+2022-12-11 17:42:06,338 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Teacher, value: {"instanceList":[{"instanceId":"10.100.239.118#8081#DEFAULT#DEFAULT_GROUP@@Teacher","ip":"10.100.239.118","port":8081,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@Teacher","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1670751726338,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2022-12-11 17:51:08,363 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Student, value: {"instanceList":[{"instanceId":"10.100.239.118#8082#DEFAULT#DEFAULT_GROUP@@Student","ip":"10.100.239.118","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@Student","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1670752268363,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2022-12-11 17:51:19,847 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@Teacher, ip: {"instanceId":"10.100.239.118#8081#DEFAULT#DEFAULT_GROUP@@Teacher","ip":"10.100.239.118","port":8081,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@Teacher","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1670752246868,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}
+
+2022-12-11 17:51:19,950 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Teacher, value: {"instanceList":[]}
+
+2022-12-11 17:51:21,986 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Teacher, value: {"instanceList":[{"instanceId":"10.100.239.118#8081#DEFAULT#DEFAULT_GROUP@@Teacher","ip":"10.100.239.118","port":8081,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@Teacher","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1670752281986,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2022-12-11 18:02:37,885 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Student, value: {"instanceList":[{"instanceId":"10.100.239.118#8082#DEFAULT#DEFAULT_GROUP@@Student","ip":"10.100.239.118","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@Student","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1670752957885,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2022-12-11 18:09:12,759 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Student, value: {"instanceList":[{"instanceId":"10.100.239.118#8082#DEFAULT#DEFAULT_GROUP@@Student","ip":"10.100.239.118","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@Student","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1670753352759,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2022-12-11 18:23:14,551 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Teacher, value: {"instanceList":[]}
+
+2022-12-11 18:23:33,650 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Teacher, value: {"instanceList":[{"instanceId":"10.100.239.118#8081#DEFAULT#DEFAULT_GROUP@@Teacher","ip":"10.100.239.118","port":8081,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@Teacher","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1670754213650,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2022-12-11 18:23:38,015 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Student, value: {"instanceList":[]}
+
+2022-12-11 18:23:54,377 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Student, value: {"instanceList":[{"instanceId":"10.100.239.118#8082#DEFAULT#DEFAULT_GROUP@@Student","ip":"10.100.239.118","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@Student","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1670754234377,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2022-12-11 18:26:25,199 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@Student
+
+2022-12-11 18:27:17,920 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@Student, ip: {"instanceId":"10.100.239.118#8082#DEFAULT#DEFAULT_GROUP@@Student","ip":"10.100.239.118","port":8082,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@Student","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1670754407634,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}
+
+2022-12-11 18:27:17,925 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Student, value: {"instanceList":[]}
+
+2022-12-11 18:28:08,514 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Student, value: {"instanceList":[{"instanceId":"10.100.239.118#8082#DEFAULT#DEFAULT_GROUP@@Student","ip":"10.100.239.118","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@Student","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1670754488513,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2022-12-11 18:28:08,805 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Student, value: {"instanceList":[]}
+
+2022-12-11 18:28:14,741 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Teacher, value: {"instanceList":[]}
+
+2022-12-11 18:28:32,328 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Teacher, value: {"instanceList":[{"instanceId":"10.100.239.118#8081#DEFAULT#DEFAULT_GROUP@@Teacher","ip":"10.100.239.118","port":8081,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@Teacher","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1670754512328,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2022-12-11 18:28:38,887 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Student, value: {"instanceList":[{"instanceId":"10.100.239.118#8082#DEFAULT#DEFAULT_GROUP@@Student","ip":"10.100.239.118","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@Student","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1670754518887,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2022-12-11 18:29:54,916 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Teacher, value: {"instanceList":[]}
+
+2022-12-11 18:30:12,647 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Teacher, value: {"instanceList":[{"instanceId":"10.100.239.118#8081#DEFAULT#DEFAULT_GROUP@@Teacher","ip":"10.100.239.118","port":8081,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@Teacher","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1670754612647,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2022-12-11 18:30:16,843 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Student, value: {"instanceList":[]}
+
+2022-12-11 18:30:31,569 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Student, value: {"instanceList":[{"instanceId":"10.100.239.118#8082#DEFAULT#DEFAULT_GROUP@@Student","ip":"10.100.239.118","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@Student","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1670754631569,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2022-12-11 18:32:06,175 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@Student
+
+2022-12-11 18:33:18,548 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@Student, ip: {"instanceId":"10.100.239.118#8082#DEFAULT#DEFAULT_GROUP@@Student","ip":"10.100.239.118","port":8082,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@Student","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1670754764749,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}
+
+2022-12-11 18:33:18,550 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Student, value: {"instanceList":[]}
+
+2022-12-11 18:35:43,874 WARN namespace : public, [DEFAULT_GROUP@@Student] services are automatically cleaned
+
+2022-12-11 18:35:43,890 INFO [DEAD-SERVICE] {"name":"DEFAULT_GROUP@@Student","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":5,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1670754798550,"checksum":"2029e8f76201595196b4f6863d5df14f","clusterMap":{"DEFAULT":{"serviceName":"DEFAULT_GROUP@@Student","name":"DEFAULT","healthChecker":{"type":"TCP"},"defaultPort":80,"defaultCheckPort":80,"useIPPort4Check":true,"metadata":{},"sitegroup":"","defCkport":80,"empty":true,"defIPPort":80}},"empty":true}
+
+2022-12-11 18:37:39,343 INFO creating empty service public:DEFAULT_GROUP@@Student
+
+2022-12-11 18:37:39,344 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@Student","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1670755059343,"checksum":"65061c903fa98398002c5663e103c2d7","clusterMap":{},"empty":true}
+
+2022-12-11 18:37:39,344 WARN cluster: DEFAULT not found, ip: {"instanceId":"10.100.239.118#8082#DEFAULT#DEFAULT_GROUP@@Student","ip":"10.100.239.118","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@Student","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1670755059343,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}, will create new cluster with default configuration.
+
+2022-12-11 18:37:39,344 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Student, value: {"instanceList":[{"instanceId":"10.100.239.118#8082#DEFAULT#DEFAULT_GROUP@@Student","ip":"10.100.239.118","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@Student","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1670755059343,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2022-12-11 18:37:39,611 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Student, value: {"instanceList":[]}
+
+2022-12-11 18:37:57,626 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Student, value: {"instanceList":[{"instanceId":"10.100.239.118#8082#DEFAULT#DEFAULT_GROUP@@Student","ip":"10.100.239.118","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@Student","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1670755077626,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2022-12-11 18:50:42,836 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Student, value: {"instanceList":[]}
+
+2022-12-11 18:51:00,328 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Student, value: {"instanceList":[{"instanceId":"10.100.239.118#8082#DEFAULT#DEFAULT_GROUP@@Student","ip":"10.100.239.118","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@Student","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1670755860327,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2022-12-11 19:00:53,296 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Student, value: {"instanceList":[]}
+
+2022-12-11 19:01:07,127 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Student, value: {"instanceList":[{"instanceId":"10.100.239.118#8082#DEFAULT#DEFAULT_GROUP@@Student","ip":"10.100.239.118","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@Student","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1670756467127,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2022-12-11 19:08:07,057 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Teacher, value: {"instanceList":[]}
+
+2022-12-11 19:08:23,796 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Teacher, value: {"instanceList":[{"instanceId":"10.100.239.118#8081#DEFAULT#DEFAULT_GROUP@@Teacher","ip":"10.100.239.118","port":8081,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@Teacher","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1670756903796,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2022-12-11 19:09:09,893 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Teacher, value: {"instanceList":[]}
+
+2022-12-11 19:11:15,895 WARN namespace : public, [DEFAULT_GROUP@@Teacher] services are automatically cleaned
+
+2022-12-11 19:11:15,899 INFO [DEAD-SERVICE] {"name":"DEFAULT_GROUP@@Teacher","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":5,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1670756949893,"checksum":"8e1ebe61645077fbbe1c33370f9a9942","clusterMap":{"DEFAULT":{"serviceName":"DEFAULT_GROUP@@Teacher","name":"DEFAULT","healthChecker":{"type":"TCP"},"defaultPort":80,"defaultCheckPort":80,"useIPPort4Check":true,"metadata":{},"sitegroup":"","defCkport":80,"empty":true,"defIPPort":80}},"empty":true}
+
+2022-12-11 19:23:28,053 INFO creating empty service public:DEFAULT_GROUP@@Teacher
+
+2022-12-11 19:23:28,055 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@Teacher","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1670757808053,"checksum":"03f481e30f21bfd0983a6a8981bbac91","clusterMap":{},"empty":true}
+
+2022-12-11 19:23:28,055 WARN cluster: DEFAULT not found, ip: {"instanceId":"10.100.239.118#8081#DEFAULT#DEFAULT_GROUP@@Teacher","ip":"10.100.239.118","port":8081,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@Teacher","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1670757808053,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}, will create new cluster with default configuration.
+
+2022-12-11 19:23:28,055 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Teacher, value: {"instanceList":[{"instanceId":"10.100.239.118#8081#DEFAULT#DEFAULT_GROUP@@Teacher","ip":"10.100.239.118","port":8081,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@Teacher","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1670757808053,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2022-12-11 19:24:07,296 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Teacher, value: {"instanceList":[{"instanceId":"10.100.239.118#8081#DEFAULT#DEFAULT_GROUP@@Teacher","ip":"10.100.239.118","port":8081,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@Teacher","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1670757847296,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2022-12-11 19:24:18,519 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Teacher, value: {"instanceList":[]}
+
+2022-12-11 19:26:45,890 WARN namespace : public, [DEFAULT_GROUP@@Teacher] services are automatically cleaned
+
+2022-12-11 19:26:45,891 INFO [DEAD-SERVICE] {"name":"DEFAULT_GROUP@@Teacher","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":5,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1670757858519,"checksum":"8e1ebe61645077fbbe1c33370f9a9942","clusterMap":{"DEFAULT":{"serviceName":"DEFAULT_GROUP@@Teacher","name":"DEFAULT","healthChecker":{"type":"TCP"},"defaultPort":80,"defaultCheckPort":80,"useIPPort4Check":true,"metadata":{},"sitegroup":"","defCkport":80,"empty":true,"defIPPort":80}},"empty":true}
+
+2022-12-11 20:17:09,551 INFO creating empty service public:DEFAULT_GROUP@@Teacher
+
+2022-12-11 20:17:09,552 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@Teacher","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1670761029551,"checksum":"03f481e30f21bfd0983a6a8981bbac91","clusterMap":{},"empty":true}
+
+2022-12-11 20:17:09,552 WARN cluster: DEFAULT not found, ip: {"instanceId":"10.100.239.118#8081#DEFAULT#DEFAULT_GROUP@@Teacher","ip":"10.100.239.118","port":8081,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@Teacher","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1670761029551,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}, will create new cluster with default configuration.
+
+2022-12-11 20:17:09,552 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Teacher, value: {"instanceList":[{"instanceId":"10.100.239.118#8081#DEFAULT#DEFAULT_GROUP@@Teacher","ip":"10.100.239.118","port":8081,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@Teacher","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1670761029551,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2022-12-11 20:20:19,978 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Student, value: {"instanceList":[]}
+
+2022-12-11 20:20:27,254 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Teacher, value: {"instanceList":[]}
+
+2022-12-11 20:20:35,307 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Student, value: {"instanceList":[{"instanceId":"10.100.239.118#8082#DEFAULT#DEFAULT_GROUP@@Student","ip":"10.100.239.118","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@Student","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1670761235303,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2022-12-11 20:20:43,476 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Teacher, value: {"instanceList":[{"instanceId":"10.100.239.118#8081#DEFAULT#DEFAULT_GROUP@@Teacher","ip":"10.100.239.118","port":8081,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@Teacher","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1670761243476,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2022-12-11 20:21:09,944 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Teacher, value: {"instanceList":[]}
+
+2022-12-11 20:21:27,513 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Teacher, value: {"instanceList":[{"instanceId":"10.100.239.118#8081#DEFAULT#DEFAULT_GROUP@@Teacher","ip":"10.100.239.118","port":8081,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@Teacher","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1670761287512,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2022-12-11 20:30:24,875 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Student, value: {"instanceList":[]}
+
+2022-12-11 20:30:33,579 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@Teacher, value: {"instanceList":[]}
+

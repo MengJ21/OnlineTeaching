@@ -6,7 +6,6 @@ import com.example.teacher.entity.dto.LoginDTO;
 import com.example.teacher.service.OssDownloadService;
 import com.example.teacher.service.OssUploadService;
 import com.example.teacher.service.impl.ITeacherServiceImpl;
-import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -84,7 +83,7 @@ public class teacherController {
         if(!jwtConfig.getUserIdentityFromToken(token).equals("老师")){
             return null;
         }
-        return iTeacherService.myCourse(this.teacher.getTeacherId());
+        return iTeacherService.myCourse(jwtConfig.getUserIdFromToken(token));
     }
     //查看我的课程中的学生
     @GetMapping("/teacher/myCourseStudent/{courseId}")
@@ -170,7 +169,7 @@ public class teacherController {
         return iTeacherService.getById(teacherId);
     }
     //获取每个课程的章节
-    @GetMapping("/student/getChapter/{courseId}")
+    @GetMapping("/teacher/getChapter/{courseId}")
     public List<chapter> getCourseChapter(@PathVariable String courseId,HttpServletRequest request){
         String token = request.getHeader(jwtConfig.getHeader());
         if(!jwtConfig.getUserIdentityFromToken(token).equals("老师")){
@@ -179,7 +178,7 @@ public class teacherController {
         return iTeacherService.getCourseChapter(courseId);
     }
     //获取每个章节下的实验
-    @GetMapping("/student/getExperiment/{chapterId}")
+    @GetMapping("/teacher/getExperiment/{chapterId}")
     public List<experiment> getChapterExperiment(@PathVariable String chapterId,HttpServletRequest request){
         String token = request.getHeader(jwtConfig.getHeader());
         if(!jwtConfig.getUserIdentityFromToken(token).equals("老师")){
@@ -188,7 +187,7 @@ public class teacherController {
         return iTeacherService.getChapterExperiment(chapterId);
     }
     //获取单个实验的详细信息
-    @GetMapping("/student/getExperimentInfo/{experimentId}")
+    @GetMapping("/teacher/getExperimentInfo/{experimentId}")
     public experiment getExperimentInfo(@PathVariable String experimentId,HttpServletRequest request){
         String token = request.getHeader(jwtConfig.getHeader());
         if(!jwtConfig.getUserIdentityFromToken(token).equals("老师")){
