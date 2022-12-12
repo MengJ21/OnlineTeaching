@@ -28,6 +28,10 @@ public class TokenInterceptor extends HandlerInterceptorAdapter {
             log.info("进入登录接口，允许访问");
             return true;
         }
+        if (uri.contains("/register")) {
+            log.info("进入注册接口，允许访问。");
+            return true;
+        }
 
         /** Token 验证 */
         String token = request.getHeader(jwtConfig.getHeader());

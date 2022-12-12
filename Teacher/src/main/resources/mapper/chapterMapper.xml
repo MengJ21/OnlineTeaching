@@ -4,5 +4,7 @@
 
     <resultMap id="chapter" type="com.example.commons.entity.chapter"/>
     <parameterMap id="chapter" type="com.example.commons.entity.chapter"/>
-
+    <select id="getChapterByCourseId" resultMap="chapter">
+        select * from chapter where course_id = #{courseId}
+    </select>
 </mapper>

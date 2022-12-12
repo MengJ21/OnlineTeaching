@@ -1,6 +1,13 @@
 package com.example.commons.entity;
 
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
+
+@Data
+@TableName("student_experiment")
 public class StudentExperiment {
+    @TableId("student_experiment_id")
     private String studentExperimentId;
     private String experimentId;
     private String studentId;
@@ -8,7 +15,15 @@ public class StudentExperiment {
     private String file_url;
     private String file_name;
     private int score;
-    private String state;
+    private Boolean state;
+
+    public Boolean getState() {
+        return state;
+    }
+
+    public void setState(Boolean state) {
+        this.state = state;
+    }
 
     public String getStudentExperimentId() {
         return studentExperimentId;
@@ -64,13 +79,5 @@ public class StudentExperiment {
 
     public void setScore(int score) {
         this.score = score;
-    }
-
-    public String getState() {
-        return state;
-    }
-
-    public void setState(String state) {
-        this.state = state;
     }
 }

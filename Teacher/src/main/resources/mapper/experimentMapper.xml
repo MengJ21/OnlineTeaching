@@ -7,4 +7,7 @@
     <update id="setFile">
         update experiment set file_url = #{fileUrl} and file_name = #{fileName} where experiment_id = #{experimentId}
     </update>
+    <select id="getExperimentByChapterId" resultMap="experiment">
+        select * from experiment where chapter_id = #{chapterId}
+    </select>
 </mapper>

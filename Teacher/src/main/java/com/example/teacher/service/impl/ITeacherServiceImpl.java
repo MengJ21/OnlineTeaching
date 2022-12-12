@@ -29,6 +29,8 @@ public class ITeacherServiceImpl extends ServiceImpl<teacherMapper, Teacher> imp
     experimentMapper experimentMapper;
     @Resource
     OssDownloadService ossDownloadService;
+    @Resource
+    studentExperimentMapper studentExperimentMapper;
     @Override
     public Teacher login(String teacherId, String password) {
         return teacherMapper.findTeacherByTeacherIdAndPassword(teacherId,password);
@@ -93,8 +95,63 @@ public class ITeacherServiceImpl extends ServiceImpl<teacherMapper, Teacher> imp
     }
 
     @Override
-    public void downLoad(String experimentId, HttpServletResponse response) {
-        experiment experiment = experimentMapper.selectById(experimentId);
-        ossDownloadService.download(response,experiment.getFileUrl(),experiment.getFileName());
+    public void downLoad(String experimentId,String studentId, HttpServletResponse response) {
+        StudentExperiment studentExperiment = studentExperimentMapper.ifStudentExperiment(experimentId,studentId);
+        ossDownloadService.download(response,studentExperiment.getFile_url(),studentExperiment.getFile_name());
+    }
+
+    @Override
+    public List<chapter> getCourseChapter(String courseId) {
+        return chapterMapper.getChapterByCourseId(courseId);
+    }
+
+    @Override
+    public List<experiment> getChapterExperiment(String chapterId) {
+        return experimentMapper.getExperimentByChapterId(chapterId);
+    }
+
+    @Override
+    public experiment getExperimentInfo(String experimentId) {
+        return experimentMapper.selectById(experimentId);
+    }
+
+    @Override
+    public List<StudentExperiment> getStudentExperiment(String experimentId) {
+        return studentExperimentMapper.getStudentExperimentByExperimentId(experimentId);
+    }
+
+    @Override
+    public int getNumOfNotExperiment(String experimentId) {
+        return courseMapper.selectCourseNumByExperiment(experimentId)-studentExperimentMapper.getStudentNum(experimentId);
+    }
+
+    @Override
+    public String deleteChapter(String chapterId) {
+        if(chapterMapper.deleteById(chapterId)!=0){
+            return "删除章节成功";
+        }else {
+            return "删除章节失败";
+        }
+    }
+
+    @Override
+    public String deleteExperiment(String experimentId) {
+        if(experimentMapper.deleteById(experimentId)!=0){
+            return "删除实验成功";
+        }else {
+            return "删除实验失败";
+        }
+    }
+
+    @Override
+    public String updateScoreOfExperiment(String experimentId, String studentId,int score) {
+        StudentExperiment studentExperiment = studentExperimentMapper.ifStudentExperiment(experimentId,studentId);
+        studentExperiment.setScore(score);
+        studentExperiment.setState(true);
+        if(studentExperimentMapper.updateById(studentExperiment)!=0){
+            return "批改成功";
+        }else {
+            return "批改失败";
+        }
     }
 }
