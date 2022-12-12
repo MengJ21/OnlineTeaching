@@ -8,4 +8,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 @Mapper
 public interface experimentMapper extends BaseMapper<experiment> {
+    public boolean setFile(String experimentId,String fileUrl,String fileName);
 }

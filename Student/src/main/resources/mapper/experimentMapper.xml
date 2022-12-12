@@ -5,4 +5,7 @@
     <resultMap id="experiment" type="com.example.commons.entity.experiment"/>
     <parameterMap id="experiment" type="com.example.commons.entity.experiment"/>
 
+    <select id="getExperimentByChapterId" resultType="experiment">
+        select * from experiment where chapter_id = #{chapterId}
+    </select>
 </mapper>

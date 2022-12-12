@@ -4,7 +4,6 @@ import com.example.commons.entity.Course;
 import com.example.commons.entity.Student;
 import com.example.commons.entity.Teacher;
 import com.example.commons.entity.chapter;
-import com.example.commons.util.UploadFileUtil;
 import com.example.teacher.entity.dto.LoginDTO;
 import com.example.teacher.service.OssUploadService;
 import com.example.teacher.service.impl.ITeacherServiceImpl;
@@ -25,15 +24,13 @@ public class teacherController {
     OssUploadService ossUploadService;
     @Autowired
     JwtConfig jwtConfig;
-    @Autowired
-    UploadFileUtil uploadFile;
 
     Teacher teacher = new Teacher();
 
     @PostMapping ("/teacher/login")
     public ResponseEntity<Object> teacherLogin(@RequestBody LoginDTO loginDTO){
         // 将学生的id存入token中，作为以后访问接口的凭证。
-        String token = jwtConfig.createToken(loginDTO.getTeacherId());
+        String token = jwtConfig.createToken(loginDTO.getTeacherId(),"老师");
         // 根据用户名密码获取学生具体信息。
         Teacher teacher = iTeacherService.login(loginDTO.getTeacherId(),loginDTO.getPassword());
         // 将具体信息和token一起返回给前端。
@@ -48,11 +45,6 @@ public class teacherController {
         else {
             return  ResponseEntity.ok(userInfo);
         }
-    }
-
-    @PostMapping("/teacher/uploadImage")
-    public String uploadImage(@RequestPart("file") MultipartFile file) {
-        return uploadFile.uploadFile(file);
     }
     @PostMapping("/teacher/createCourse")
     public String createCourse(@RequestBody Course course){

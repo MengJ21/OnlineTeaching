@@ -2,7 +2,9 @@ package com.example.teacher.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.example.commons.entity.*;
+import org.springframework.web.bind.annotation.PathVariable;
 
+import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 public interface ITeacherService extends IService<Teacher> {
@@ -13,5 +15,7 @@ public interface ITeacherService extends IService<Teacher> {
     List<Student> myCourseStudent(String courseId);
     String deleteCourse(String courseId);
     String createChapter(chapter chapter);
-    String createChapter(experiment experiment);
+    String createExperiment(experiment experiment);
+    boolean createFile(String experimentId,String fileUrl,String fileName);
+    public void downLoad(@PathVariable String experimentId, HttpServletResponse response);
 }

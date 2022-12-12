@@ -62,7 +62,6 @@
             <version>2021.1</version>
         </dependency>
     </dependencies>
-
     <dependencyManagement>
         <dependencies>
             <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-dependencies -->
