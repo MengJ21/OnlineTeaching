@@ -1,14 +1,29 @@
 package com.example.commons.entity;
 
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
+
+@Data
+@TableName("student_experiment")
 public class StudentExperiment {
+    @TableId("student_experiment_id")
     private String studentExperimentId;
     private String experimentId;
     private String studentId;
     private String experiment_content;
-    private String file_url;
-    private String file_name;
+    private String fileUrl;
+    private String fileName;
     private int score;
-    private String state;
+    private Boolean state;
+
+    public Boolean getState() {
+        return state;
+    }
+
+    public void setState(Boolean state) {
+        this.state = state;
+    }
 
     public String getStudentExperimentId() {
         return studentExperimentId;
@@ -42,20 +57,20 @@ public class StudentExperiment {
         this.experiment_content = experiment_content;
     }
 
-    public String getFile_url() {
-        return file_url;
+    public String getFileUrl() {
+        return fileUrl;
     }
 
-    public void setFile_url(String file_url) {
-        this.file_url = file_url;
+    public void setFileUrl(String fileUrl) {
+        this.fileUrl = fileUrl;
     }
 
-    public String getFile_name() {
-        return file_name;
+    public String getFileName() {
+        return fileName;
     }
 
-    public void setFile_name(String file_name) {
-        this.file_name = file_name;
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
     }
 
     public int getScore() {
@@ -64,13 +79,5 @@ public class StudentExperiment {
 
     public void setScore(int score) {
         this.score = score;
-    }
-
-    public String getState() {
-        return state;
-    }
-
-    public void setState(String state) {
-        this.state = state;
     }
 }

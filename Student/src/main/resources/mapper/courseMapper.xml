@@ -26,4 +26,7 @@
             where student_id = #{studentId}
             )
     </select>
+    <select id="selectCourseByName" resultMap="Course">
+        select * from course where course_name = #{courseName}
+    </select>
 </mapper>

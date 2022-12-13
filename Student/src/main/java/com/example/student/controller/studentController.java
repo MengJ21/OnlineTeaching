@@ -13,7 +13,6 @@ import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -27,7 +26,6 @@ public class StudentController {
     JwtConfig jwtConfig;
     @Autowired
     OssUploadService ossUploadService;
-    Student student = new Student();
 
     //学生登录
     @GetMapping("/student/login")
@@ -48,6 +46,16 @@ public class StudentController {
         else {
             return  ResponseEntity.ok(userInfo);
         }
+    }
+    //学生注册
+    @PostMapping("/student/register/")
+    public String studentRegister(@RequestBody Student student){
+        if(iStudentService.save(student)){
+            return "注册成功！";
+        }else {
+            return "注册失败！";
+        }
+
     }
     //学生查看老师信息
     @GetMapping("/student/getTeacherById/{teacherId}")
@@ -121,8 +129,8 @@ public class StudentController {
         }
         return iStudentService.getMyCourse(jwtConfig.getUserIdFromToken(token));
     }
-    //上传实验报告 返回值是file的url和名字
-    @PostMapping("/teacher/upload/file/{courseId}/{chapterId}/{experimentId}")
+    //上传实验报告
+    @PostMapping("/student/upload/file/{courseId}/{chapterId}/{experimentId}")
     public String upload(HttpServletRequest request,@RequestPart("file")MultipartFile multipartFile,@PathVariable String courseId,@PathVariable String chapterId,@PathVariable String experimentId){
         String token = request.getHeader(jwtConfig.getHeader());
         if(!jwtConfig.getUserIdentityFromToken(token).equals("学生")){
@@ -173,7 +181,7 @@ public class StudentController {
         return iStudentService.submitExperiment(studentExperiment);
     }
     //下载老师上传的实验要求文件
-    @GetMapping("/teacher/download/file/{experimentId}")
+    @GetMapping("/student/download/file/{experimentId}")
     public void downLoad(@PathVariable String experimentId, HttpServletResponse response,HttpServletRequest request){
         String token = request.getHeader(jwtConfig.getHeader());
         if(!jwtConfig.getUserIdentityFromToken(token).equals("学生")){
@@ -216,5 +224,14 @@ public class StudentController {
             return null;
         }
         return iStudentService.getMyExperiment(experimentId,jwtConfig.getUserIdFromToken(token));
+    }
+    //通过名字来搜索课程
+    @GetMapping("/student/selectCourseByName/{courseName}")
+    public Course selectCourseByName(@PathVariable String courseName,HttpServletRequest request){
+        String token = request.getHeader(jwtConfig.getHeader());
+        if(!jwtConfig.getUserIdentityFromToken(token).equals("学生")){
+            return null;
+        }
+        return iStudentService.selectCourseByName(courseName);
     }
 }

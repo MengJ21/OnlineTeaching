@@ -13,11 +13,7 @@ import java.io.IOException;
 @Slf4j
 public class UploadFileUtil {
 
-<<<<<<< HEAD
     @Value("${web.upload-path")
-=======
-    @Value("${web.upload-path}")
->>>>>>> origin/master
     private String uploadPath;
 
     public String uploadFile(MultipartFile file) {

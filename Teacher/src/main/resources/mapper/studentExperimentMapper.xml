@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.teacher.mapper.studentExperimentMapper">
+
+    <resultMap id="StudentExperiment" type="com.example.commons.entity.StudentExperiment"/>
+    <parameterMap id="StudentExperiment" type="com.example.commons.entity.StudentExperiment"/>
+    <select id="ifStudentExperiment" resultMap="StudentExperiment">
+        select * from student_experiment where student_id = #{studentId} and experiment_id = #{experimentId}
+    </select>
+    <update id="setFile">
+        update student_experiment set file_url = #{fileUrl} and file_Name = #{fileName} where student_id = {studentId} and experiment_id = #{experimentId}
+    </update>
+    <select id="getStudentExperimentByExperimentId" resultMap="StudentExperiment">
+        select * from student_experiment where experiment_id = #{experimentId}
+    </select>
+    <select id="getStudentNum" resultType="int">
+        select sum(student_id) from student_experiment where experiment_id = #{experimentId}
+    </select>
+</mapper>

@@ -7,3 +7,33 @@ spring:
     nacos:
       discovery:
         server-addr: 127.0.0.1:8848
+  # 配置nacos管理服务。
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/onlineteach?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+    username: root
+    password: ZMLQQQ
+    type: com.alibaba.druid.pool.DruidDataSource
+    #sentinel服务默认端口，访问localhost:8080管理服务。
+    sentinel:
+      transport:
+        dashboard: localhost:8080
+#使用sentinel要开放所有接口
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+# 配置环境运行python或c++文件
+run:
+  scripts:
+    python: C:\python\python3.10\python.exe
+config:
+  jwt:
+    # 加密密钥
+    secret: abcdefg1234567
+    # token有效时长
+    expire: 3600
+    # header 名称
+    header: Token
+# 微服务之间传递token

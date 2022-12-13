@@ -14,4 +14,5 @@ public interface courseMapper extends BaseMapper<Course> {
     boolean updateStudent(String courseId, int courseStudentNum);
     List<Course> getCourseByType(String courseType);
     List<Course> getMyCourse(String studentId);
+    Course selectCourseByName(String courseName);
 }
