@@ -86,3 +86,21 @@
 
 2022-12-14 20:48:15,885 INFO received ack: {"type": "push-ack", "lastRefTime":"123113279657900", "data":""} from: 10.103.53.1:60441, cost: 3 ms, unacked: 0, total push: 5
 
+2022-12-14 21:59:25,833 INFO DEFAULT_GROUP@@Student is changed, add it to push queue.
+
+2022-12-14 21:59:27,206 INFO DEFAULT_GROUP@@Student is changed, add it to push queue.
+
+2022-12-14 21:59:32,213 INFO DEFAULT_GROUP@@Student is changed, add it to push queue.
+
+2022-12-14 21:59:32,213 INFO serviceName: DEFAULT_GROUP@@Student changed, schedule push for: 10.103.53.1:60441, agent: Nacos-Java-Client:v1.4.1, key: 10.103.53.1,60441,127389610843800
+
+2022-12-14 21:59:32,213 INFO send udp packet: 10.103.53.1,60441,127389610843800
+
+2022-12-14 21:59:32,214 INFO received ack: {"type": "push-ack", "lastRefTime":"127389610843800", "data":""} from: 10.103.53.1:60441, cost: 1 ms, unacked: 0, total push: 6
+
+2022-12-14 22:17:28,019 INFO DEFAULT_GROUP@@Student is changed, add it to push queue.
+
+2022-12-14 22:17:30,402 INFO DEFAULT_GROUP@@Student is changed, add it to push queue.
+
+2022-12-14 22:30:20,092 INFO DEFAULT_GROUP@@Student is changed, add it to push queue.
+

@@ -1,0 +1,56 @@
+2022-12-13 18:05:14,472 INFO DEFAULT_GROUP@@Student {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.103.53.1:8888:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-12-13 18:05:14,474 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Student, ips: 10.103.53.1:8888_true,
+
+2022-12-13 18:05:28,718 INFO DEFAULT_GROUP@@Student {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.103.53.1:8888:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-12-13 18:05:28,718 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Student, ips: 
+
+2022-12-13 18:05:48,523 INFO DEFAULT_GROUP@@Student {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.103.53.1:8888:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-12-13 18:05:48,523 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Student, ips: 10.103.53.1:8888_true,
+
+2022-12-13 18:05:53,813 INFO DEFAULT_GROUP@@Student {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.103.53.1:8888:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-12-13 18:05:53,813 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Student, ips: 
+
+2022-12-13 18:06:07,755 INFO DEFAULT_GROUP@@Student {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.103.53.1:8888:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-12-13 18:06:07,755 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Student, ips: 10.103.53.1:8888_true,
+
+2022-12-13 18:06:27,891 INFO DEFAULT_GROUP@@Student {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.103.53.1:8888:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-12-13 18:06:27,891 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Student, ips: 
+
+2022-12-13 18:06:44,232 INFO DEFAULT_GROUP@@Teacher {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.103.53.1:8081:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-12-13 18:06:44,232 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Teacher, ips: 10.103.53.1:8081_true,
+
+2022-12-13 18:06:46,373 INFO DEFAULT_GROUP@@Student {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.103.53.1:8888:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-12-13 18:06:46,374 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Student, ips: 10.103.53.1:8888_true,
+
+2022-12-13 18:07:16,264 INFO DEFAULT_GROUP@@Student {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.103.53.1:8888:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-12-13 18:07:16,264 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Student, ips: 
+
+2022-12-13 18:07:24,835 INFO DEFAULT_GROUP@@Teacher {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.103.53.1:8081:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-12-13 18:07:24,835 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Teacher, ips: 
+
+2022-12-13 18:07:25,576 INFO DEFAULT_GROUP@@Student {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.103.53.1:8888:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-12-13 18:07:25,576 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Student, ips: 10.103.53.1:8888_true,
+
+2022-12-13 18:07:38,815 INFO DEFAULT_GROUP@@Teacher {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.103.53.1:8081:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-12-13 18:07:38,815 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Teacher, ips: 10.103.53.1:8081_true,
+
+2022-12-13 18:09:05,098 INFO DEFAULT_GROUP@@Student {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.103.53.1:8888:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-12-13 18:09:05,098 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Student, ips: 
+
+2022-12-13 18:09:16,604 INFO DEFAULT_GROUP@@Student {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.103.53.1:8888:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-12-13 18:09:16,604 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Student, ips: 10.103.53.1:8888_true,
+

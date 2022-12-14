@@ -42,3 +42,29 @@
 
 2022-12-14 20:48:14,867 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Student, ips: 10.103.53.1:8888_true,
 
+2022-12-14 21:59:24,823 INFO {POS} {IP-DISABLED} valid: 10.103.53.1:8888@DEFAULT@DEFAULT_GROUP@@Student, region: unknown, msg: client timeout after 15000, last beat: 1671023496313
+
+2022-12-14 21:59:26,190 INFO service: DEFAULT_GROUP@@Student {POS} {IP-ENABLED} valid: 10.103.53.1:8888@DEFAULT, region: unknown, msg: client beat ok
+
+2022-12-14 21:59:26,208 INFO DEFAULT_GROUP@@Student {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.103.53.1:8888:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-12-14 21:59:26,208 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Student, ips: 
+
+2022-12-14 21:59:31,209 INFO DEFAULT_GROUP@@Student {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.103.53.1:8888:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-12-14 21:59:31,209 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Student, ips: 10.103.53.1:8888_true,
+
+2022-12-14 22:17:27,005 INFO {POS} {IP-DISABLED} valid: 10.103.53.1:8888@DEFAULT@DEFAULT_GROUP@@Student, region: unknown, msg: client timeout after 15000, last beat: 1671026991652
+
+2022-12-14 22:17:27,018 INFO DEFAULT_GROUP@@Student {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.103.53.1:8888:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-12-14 22:17:27,018 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Student, ips: 
+
+2022-12-14 22:17:29,396 INFO DEFAULT_GROUP@@Student {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.103.53.1:8888:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-12-14 22:17:29,396 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Student, ips: 10.103.53.1:8888_true,
+
+2022-12-14 22:30:19,082 INFO {POS} {IP-DISABLED} valid: 10.103.53.1:8888@DEFAULT@DEFAULT_GROUP@@Student, region: unknown, msg: client timeout after 15000, last beat: 1671028194891
+
+2022-12-14 22:30:19,082 INFO service: DEFAULT_GROUP@@Student {POS} {IP-ENABLED} valid: 10.103.53.1:8888@DEFAULT, region: unknown, msg: client beat ok
+

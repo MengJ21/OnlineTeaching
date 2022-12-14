@@ -316,3 +316,35 @@
 
 2022-12-14 20:53:27,593 WARN clearConfigHistory start
 
+2022-12-14 21:03:27,411 INFO [capacityManagement] start correct usage
+
+2022-12-14 21:03:27,411 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-12-14 21:03:27,597 WARN clearConfigHistory start
+
+2022-12-14 21:59:33,401 WARN clearConfigHistory start
+
+2022-12-14 21:59:44,444 WARN HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=48m14s881ms646µs700ns).
+
+2022-12-14 22:01:12,285 INFO [capacityManagement] start correct usage
+
+2022-12-14 22:01:12,285 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-12-14 22:09:33,412 WARN clearConfigHistory start
+
+2022-12-14 22:17:47,355 WARN HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m2s749ms873µs600ns).
+
+2022-12-14 22:18:45,034 INFO [capacityManagement] start correct usage
+
+2022-12-14 22:18:45,034 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-12-14 22:19:33,425 WARN clearConfigHistory start
+
+2022-12-14 22:28:45,048 INFO [capacityManagement] start correct usage
+
+2022-12-14 22:28:45,048 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-12-14 22:29:33,440 WARN clearConfigHistory start
+
+2022-12-14 22:30:36,051 WARN HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=48s523ms118µs200ns).
+
