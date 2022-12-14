@@ -4352,3 +4352,9 @@
 
 2022-12-14 17:37:28,353 INFO toNotifyTaskSize = 0
 
+2022-12-14 17:37:38,366 INFO [long-pulling] client count 0
+
+2022-12-14 17:37:38,366 INFO toNotifyTaskSize = 0
+
+2022-12-14 17:37:38,366 INFO groupCount = 0, subscriberClientCount = 0, subscriberCount = 0
+
