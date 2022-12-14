@@ -10,6 +10,6 @@ import java.util.List;
 @Repository
 @Mapper
 public interface experimentMapper extends BaseMapper<experiment> {
-    List<experiment> getExperimentByChapterId(String chapterId);
-    String findChapterIdByExperimentId(String experimentId);
+    List<experiment> getExperimentByChapterId(long chapterId);
+    String findChapterIdByExperimentId(long experimentId);
 }

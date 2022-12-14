@@ -33,8 +33,10 @@ public class IStudentServiceImpl extends ServiceImpl<studentMapper, Student> imp
     experimentMapper experimentMapper;
     @Resource
     chapterMapper chapterMapper;
+    @Autowired
+    CommentsMapper commentsMapper;
     @Override
-    public Student login(String studentId, String password) {
+    public Student login(long studentId, String password) {
         return studentMapper.findStudentByStudentIdAndPassword(studentId, password);
     }
 
@@ -49,7 +51,7 @@ public class IStudentServiceImpl extends ServiceImpl<studentMapper, Student> imp
     }
 
     @Override
-    public String joinCourse(String courseId,String studentId) {
+    public String joinCourse(long courseId,long studentId) {
         courseStudent courseStudent1 = courseStudentMapper.selectRelation(courseId,studentId);
         if(courseStudent1==null){
             courseStudent courseStudent = new courseStudent();
@@ -80,7 +82,7 @@ public class IStudentServiceImpl extends ServiceImpl<studentMapper, Student> imp
     }
 
     @Override
-    public String quitCourse(String courseId, String studentId) {
+    public String quitCourse(long courseId, long studentId) {
         courseStudent courseStudent = courseStudentMapper.selectRelation(courseId,studentId);
         if(courseStudent==null){
             return "未选本门课程！";
@@ -98,7 +100,7 @@ public class IStudentServiceImpl extends ServiceImpl<studentMapper, Student> imp
     }
 
     @Override
-    public String getScore(String courseId, String studentId) {
+    public String getScore(long courseId, long studentId) {
         courseStudent courseStudent = courseStudentMapper.selectRelation(courseId,studentId);
         if(courseStudent==null){
             return "未学习过本门课程或者成绩未出！";
@@ -108,7 +110,7 @@ public class IStudentServiceImpl extends ServiceImpl<studentMapper, Student> imp
     }
 
     @Override
-    public List<Course> getMyCourse(String studentId) {
+    public List<Course> getMyCourse(long studentId) {
         return courseMapper.getMyCourse(studentId);
     }
 
@@ -122,43 +124,43 @@ public class IStudentServiceImpl extends ServiceImpl<studentMapper, Student> imp
     }
 
     @Override
-    public void downLoad(String experimentId, HttpServletResponse response) {
+    public void downLoad(long experimentId, HttpServletResponse response) {
         experiment experiment = experimentMapper.selectById(experimentId);
         ossDownloadService.download(response,experiment.getFileUrl(),experiment.getFileName());
     }
 
     @Override
-    public List<chapter> getCourseChapter(String courseId) {
+    public List<chapter> getCourseChapter(long courseId) {
         return chapterMapper.getChapterByCourseId(courseId);
     }
 
     @Override
-    public List<experiment> getChapterExperiment(String chapterId) {
+    public List<experiment> getChapterExperiment(long chapterId) {
         return experimentMapper.getExperimentByChapterId(chapterId);
     }
 
     @Override
-    public experiment getExperimentInfo(String experimentId) {
+    public experiment getExperimentInfo(long experimentId) {
         return experimentMapper.selectById(experimentId);
     }
 
     @Override
-    public StudentExperiment ifStudentExperiment(String experimentId, String studentId) {
+    public StudentExperiment ifStudentExperiment(long experimentId, long studentId) {
         return studentExperimentMapper.ifStudentExperiment(experimentId,studentId);
     }
 
     @Override
-    public boolean createFile(String experimentId,String studentId, String fileUrl, String fileName) {
+    public boolean createFile(long experimentId,long studentId, String fileUrl, String fileName) {
         return studentExperimentMapper.setFile(experimentId,studentId,fileUrl,fileName);
     }
 
     @Override
-    public boolean createCodeFile(String experimentId, String studentId, String fileUrl, String fileName) {
+    public boolean createCodeFile(long experimentId, long studentId, String fileUrl, String fileName) {
         return studentExperimentMapper.setCodeFile(experimentId,studentId,fileUrl,fileName);
     }
 
     @Override
-    public StudentExperiment getMyExperiment(String experimentId, String studentId) {
+    public StudentExperiment getMyExperiment(long experimentId, long studentId) {
         return studentExperimentMapper.ifStudentExperiment(experimentId,studentId);
     }
 
@@ -168,13 +170,42 @@ public class IStudentServiceImpl extends ServiceImpl<studentMapper, Student> imp
     }
 
     @Override
-    public String findChapterIdByExperimentId(String experimentId) {
-        return experimentMapper.findChapterIdByExperimentId(experimentId);
+    public long findChapterIdByExperimentId(long experimentId) {
+        return Long.parseLong(experimentMapper.findChapterIdByExperimentId(experimentId));
     }
 
     @Override
-    public String findCourseIdByChapterId(String chapterId) {
-        return chapterMapper.getCourseIdByChapterId(chapterId);
+    public long findCourseIdByChapterId(long chapterId) {
+        return Long.parseLong(chapterMapper.getCourseIdByChapterId(chapterId));
+    }
+
+    @Override
+    public boolean insertComments(Comments comments) {
+        int res = commentsMapper.insert(comments);
+        if (res == 1) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    @Override
+    public Integer addLikes(long commentId) {
+        int nowLikes = commentsMapper.getLikes(commentId);
+        commentsMapper.updateLikes(commentId,++nowLikes);
+        return commentsMapper.getLikes(commentId);
+    }
+
+    @Override
+    public Integer deleteLikes(long commentId) {
+        int nowLikes = commentsMapper.getLikes(commentId);
+        commentsMapper.updateLikes(commentId,--nowLikes);
+        return commentsMapper.getLikes(commentId);
+    }
+
+    @Override
+    public Integer getLikes(long commentId) {
+        return commentsMapper.getLikes(commentId);
     }
 
     public String upload(@RequestPart("file") MultipartFile multipartFile, @PathVariable String courseId, @PathVariable String chapterId, @PathVariable String experimentId){

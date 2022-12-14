@@ -54,3 +54,35 @@
 
 2022-12-14 17:13:48,692 INFO received ack: {"type": "push-ack", "lastRefTime":"110246078755200", "data":""} from: 10.103.53.1:62406, cost: 7 ms, unacked: 0, total push: 1
 
+2022-12-14 19:38:45,905 INFO DEFAULT_GROUP@@Student is changed, add it to push queue.
+
+2022-12-14 19:38:45,906 INFO serviceName: DEFAULT_GROUP@@Student changed, schedule push for: 10.103.53.1:62406, agent: Nacos-Java-Client:v1.4.1, key: 10.103.53.1,62406,118943302834600
+
+2022-12-14 19:38:45,906 INFO send udp packet: 10.103.53.1,62406,118943302834600
+
+2022-12-14 19:38:45,912 INFO received ack: {"type": "push-ack", "lastRefTime":"118943302834600", "data":""} from: 10.103.53.1:62406, cost: 6 ms, unacked: 0, total push: 2
+
+2022-12-14 19:46:09,806 INFO DEFAULT_GROUP@@Student is changed, add it to push queue.
+
+2022-12-14 19:46:09,806 INFO serviceName: DEFAULT_GROUP@@Student changed, schedule push for: 10.103.53.1:50161, agent: Nacos-Java-Client:v1.4.1, key: 10.103.53.1,50161,119387204271600
+
+2022-12-14 19:46:09,806 INFO send udp packet: 10.103.53.1,50161,119387204271600
+
+2022-12-14 19:46:09,809 INFO received ack: {"type": "push-ack", "lastRefTime":"119387204271600", "data":""} from: 10.103.53.1:50161, cost: 3 ms, unacked: 0, total push: 3
+
+2022-12-14 20:47:59,725 INFO DEFAULT_GROUP@@Student is changed, add it to push queue.
+
+2022-12-14 20:47:59,725 INFO serviceName: DEFAULT_GROUP@@Student changed, schedule push for: 10.103.53.1:50161, agent: Nacos-Java-Client:v1.4.1, key: 10.103.53.1,50161,123097123397700
+
+2022-12-14 20:47:59,726 INFO send udp packet: 10.103.53.1,50161,123097123397700
+
+2022-12-14 20:47:59,729 INFO received ack: {"type": "push-ack", "lastRefTime":"123097123397700", "data":""} from: 10.103.53.1:50161, cost: 3 ms, unacked: 0, total push: 4
+
+2022-12-14 20:48:15,882 INFO DEFAULT_GROUP@@Student is changed, add it to push queue.
+
+2022-12-14 20:48:15,882 INFO serviceName: DEFAULT_GROUP@@Student changed, schedule push for: 10.103.53.1:60441, agent: Nacos-Java-Client:v1.4.1, key: 10.103.53.1,60441,123113279657900
+
+2022-12-14 20:48:15,882 INFO send udp packet: 10.103.53.1,60441,123113279657900
+
+2022-12-14 20:48:15,885 INFO received ack: {"type": "push-ack", "lastRefTime":"123113279657900", "data":""} from: 10.103.53.1:60441, cost: 3 ms, unacked: 0, total push: 5
+

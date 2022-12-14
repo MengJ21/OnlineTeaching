@@ -90,3 +90,7 @@
 
 2022-12-14 17:13:47,547 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@Student
 
+2022-12-14 19:40:47,179 INFO [RAFT-NOTIFIER] datum is deleted, key: com.alibaba.nacos.naming.domains.meta.public##DEFAULT_GROUP@@Student
+
+2022-12-14 19:46:08,795 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@Student
+

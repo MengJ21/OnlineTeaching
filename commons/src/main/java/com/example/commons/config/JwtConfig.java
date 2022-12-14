@@ -26,13 +26,13 @@ public class JwtConfig {
      * @param subject
      * @return
      */
-    public String createToken (String id,String subject){
+    public String createToken (long id,String subject){
         Date nowDate = new Date();
         Date expireDate = new Date(nowDate.getTime() + expire * 1000);//过期时间
         return Jwts.builder()
                 .setHeaderParam("typ", "JWT")
                 .setSubject(subject)
-                .setId(id)
+                .setId(String.valueOf(id))
                 .setIssuedAt(nowDate)
                 .setExpiration(expireDate)
                 .signWith(SignatureAlgorithm.HS512, secret)
@@ -75,8 +75,8 @@ public class JwtConfig {
     /**
      * 获取用户名从token中
      */
-    public String getUserIdFromToken(String token) {
-        return getTokenClaim(token).getId();
+    public long getUserIdFromToken(String token) {
+        return Long.parseLong(getTokenClaim(token).getId());
     }
     /**
      * 获取用户身份从token中

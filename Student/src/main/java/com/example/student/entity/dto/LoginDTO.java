@@ -11,7 +11,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 public class LoginDTO {
-    private String studentId;
+    private long studentId;
     private String password;
     private String identity;
 }

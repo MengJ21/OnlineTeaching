@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.student.mapper.CommentsMapper">
+    <select id="getLikes" resultType="java.lang.Integer">
+        select likes from comments where comment_id = #{commentId}
+    </select>
+    <update id="updateLikes">
+        update comments set likes = #{num} where comment_id = #{commentId}
+    </update>
+</mapper>

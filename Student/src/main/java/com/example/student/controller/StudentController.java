@@ -105,7 +105,7 @@ public class StudentController {
     }
     //学生加入课程
     @PostMapping("/student/joinCourse/{courseId}")
-    public String joinCourse(@PathVariable String courseId,HttpServletRequest request){
+    public String joinCourse(@PathVariable long courseId,HttpServletRequest request){
         String token = request.getHeader(jwtConfig.getHeader());
         if(jwtConfig.getUserIdentityFromToken(token).equals("学生")){
             return iStudentService.joinCourse(courseId,jwtConfig.getUserIdFromToken(token));
@@ -123,7 +123,7 @@ public class StudentController {
     }
     //学生退出课程
     @PostMapping("/student/quitCourse/{courseId}")
-    public String quitCourse(@PathVariable String courseId,HttpServletRequest request){
+    public String quitCourse(@PathVariable long courseId,HttpServletRequest request){
         String token = request.getHeader(jwtConfig.getHeader());
         if(!jwtConfig.getUserIdentityFromToken(token).equals("学生")){
             return null;
@@ -132,7 +132,7 @@ public class StudentController {
     }
     //学生获取课程的成绩
     @GetMapping("/student/getCourseScore/{courseId}")
-    public String getCourseScore(@PathVariable String courseId,HttpServletRequest request){
+    public String getCourseScore(@PathVariable long courseId,HttpServletRequest request){
         String token = request.getHeader(jwtConfig.getHeader());
         if(!jwtConfig.getUserIdentityFromToken(token).equals("学生")){
             return null;
@@ -150,7 +150,7 @@ public class StudentController {
     }
     //上传实验报告
     @PostMapping("/student/upload/file/{courseId}/{chapterId}/{experimentId}")
-    public String upload(HttpServletRequest request,@RequestPart("file")MultipartFile multipartFile,@PathVariable String courseId,@PathVariable String chapterId,@PathVariable String experimentId){
+    public String upload(HttpServletRequest request,@RequestPart("file")MultipartFile multipartFile,@PathVariable long courseId,@PathVariable long chapterId,@PathVariable long experimentId){
         String token = request.getHeader(jwtConfig.getHeader());
         if(!jwtConfig.getUserIdentityFromToken(token).equals("学生")){
             return null;
@@ -162,7 +162,7 @@ public class StudentController {
             long size = multipartFile.getSize();
             String originFilename = multipartFile.getOriginalFilename();
             String contentType = multipartFile.getContentType();
-            if(iStudentService.createFile(experimentId,jwtConfig.getUserIdFromToken(token),ossUploadService.uploadFile(multipartFile,courseId,chapterId,experimentId),multipartFile.getOriginalFilename())){
+            if(iStudentService.createFile(experimentId,jwtConfig.getUserIdFromToken(token),ossUploadService.uploadFile(multipartFile,String.valueOf(courseId), String.valueOf(chapterId), String.valueOf(experimentId)),multipartFile.getOriginalFilename())){
                 return "上传成功！";
             }else {
                 return "上传失败！";
@@ -178,7 +178,7 @@ public class StudentController {
             long size = multipartFile.getSize();
             String originFilename = multipartFile.getOriginalFilename();
             String contentType = multipartFile.getContentType();
-            if(iStudentService.createFile(experimentId,jwtConfig.getUserIdFromToken(token),ossUploadService.uploadFile(multipartFile,courseId,chapterId,experimentId),multipartFile.getOriginalFilename())){
+            if(iStudentService.createFile(experimentId,jwtConfig.getUserIdFromToken(token),ossUploadService.uploadFile(multipartFile,String.valueOf(courseId), String.valueOf(chapterId), String.valueOf(experimentId)),multipartFile.getOriginalFilename())){
                 return "上传成功！";
             }else {
                 return "上传失败！";
@@ -201,7 +201,7 @@ public class StudentController {
     }
     //下载老师上传的实验要求文件
     @GetMapping("/student/download/file/{experimentId}")
-    public void downLoad(@PathVariable String experimentId, HttpServletResponse response,HttpServletRequest request){
+    public void downLoad(@PathVariable long experimentId, HttpServletResponse response,HttpServletRequest request){
         String token = request.getHeader(jwtConfig.getHeader());
         if(!jwtConfig.getUserIdentityFromToken(token).equals("学生")){
             System.exit(0);
@@ -210,7 +210,7 @@ public class StudentController {
     }
     //获取每个课程的章节
     @GetMapping("/student/getChapter/{courseId}")
-    public List<chapter> getCourseChapter(@PathVariable String courseId,HttpServletRequest request){
+    public List<chapter> getCourseChapter(@PathVariable long courseId,HttpServletRequest request){
         String token = request.getHeader(jwtConfig.getHeader());
         if(!jwtConfig.getUserIdentityFromToken(token).equals("学生")){
             return null;
@@ -219,7 +219,7 @@ public class StudentController {
     }
     //获取每个章节下的实验
     @GetMapping("/student/getExperiment/{chapterId}")
-    public List<experiment> getChapterExperiment(@PathVariable String chapterId,HttpServletRequest request){
+    public List<experiment> getChapterExperiment(@PathVariable long chapterId,HttpServletRequest request){
         String token = request.getHeader(jwtConfig.getHeader());
         if(!jwtConfig.getUserIdentityFromToken(token).equals("学生")){
             return null;
@@ -228,7 +228,7 @@ public class StudentController {
     }
     //获取单个实验的详细信息
     @GetMapping("/student/getExperimentInfo/{experimentId}")
-    public experiment getExperimentInfo(@PathVariable String experimentId,HttpServletRequest request){
+    public experiment getExperimentInfo(@PathVariable long experimentId,HttpServletRequest request){
         String token = request.getHeader(jwtConfig.getHeader());
         if(!jwtConfig.getUserIdentityFromToken(token).equals("学生")){
             return null;
@@ -237,7 +237,7 @@ public class StudentController {
     }
     //获取我的实验内容
     @GetMapping("/student/getMyExperiment/{experimentId}")
-    public ResponseEntity<StudentExperimentContent> getMyExperiment(@PathVariable String experimentId, HttpServletRequest request){
+    public ResponseEntity<StudentExperimentContent> getMyExperiment(@PathVariable long experimentId, HttpServletRequest request){
         String token = request.getHeader(jwtConfig.getHeader());
         if(!jwtConfig.getUserIdentityFromToken(token).equals("学生")){
             return null;
@@ -258,15 +258,15 @@ public class StudentController {
         return iStudentService.selectCourseByName(courseName);
     }
     @PostMapping("/student/onlineCoding/{experimentId}")
-    public ResponseEntity<Object> onlineCoding(@RequestBody CodeDTO codeDTO, @PathVariable String experimentId, HttpServletRequest request) {
+    public ResponseEntity<Object> onlineCoding(@RequestBody CodeDTO codeDTO, @PathVariable long experimentId, HttpServletRequest request) {
         String token = request.getHeader(jwtConfig.getHeader());
         if(!jwtConfig.getUserIdentityFromToken(token).equals("学生")){
             return null;
         }
         log.info("获取学生id，章节id和课程id");
-        String studentId = jwtConfig.getUserIdFromToken(token);
-        String chapterId = iStudentService.findChapterIdByExperimentId(experimentId);
-        String courseId = iStudentService.findCourseIdByChapterId(chapterId);
+        long studentId = jwtConfig.getUserIdFromToken(token);
+        long chapterId = iStudentService.findChapterIdByExperimentId(experimentId);
+        long courseId = iStudentService.findCourseIdByChapterId(chapterId);
         ProcessResult processResult = null;
         try {
             processResult = runCode.runCode(codeDTO.getType(), codeDTO.getContent());
@@ -281,7 +281,7 @@ public class StudentController {
         log.info("获取存储的文件名称：");
         String originalFilename = multipartFile.getOriginalFilename();
         log.info(originalFilename);
-        String path = ossUploadService.uploadFile(multipartFile, courseId, chapterId, experimentId);
+        String path = ossUploadService.uploadFile(multipartFile, String.valueOf(courseId), String.valueOf(chapterId), String.valueOf(experimentId));
         log.info("删除本地的临时文件");
         code.delete();
         log.info("将文件路径与名称存储到数据库。");
@@ -308,5 +308,25 @@ public class StudentController {
 
         }
     }
-
+    @PostMapping("/student/comment")
+    public ResponseEntity<Object> comment(@RequestBody Comments comments) {
+        boolean b = iStudentService.insertComments(comments);
+        if (b) {
+            return ResponseEntity.ok("评论成功");
+        } else {
+            return ResponseEntity.ok("评论失败");
+        }
+    }
+    @GetMapping("/student/comment/likes/{commentId}")
+    public ResponseEntity<Object> getAllLikes(@PathVariable long commentId) {
+        return ResponseEntity.ok(iStudentService.getLikes(commentId));
+    }
+    @GetMapping("/student/comment/addLikes/{commentId}")
+    public ResponseEntity<Object> addLikes(@PathVariable long commentId) {
+        return ResponseEntity.ok(iStudentService.addLikes(commentId));
+    }
+    @GetMapping("/student/comment/deleteLikes/{commentId}")
+    public ResponseEntity<Object> deleteLikes(@PathVariable long commentId) {
+        return ResponseEntity.ok(iStudentService.deleteLikes(commentId));
+    }
 }

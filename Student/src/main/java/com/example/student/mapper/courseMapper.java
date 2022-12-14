@@ -11,8 +11,8 @@ import java.util.List;
 @Mapper
 public interface courseMapper extends BaseMapper<Course> {
     List<Course> getCourseByTeacherId(String teacherId);
-    boolean updateStudent(String courseId, int courseStudentNum);
+    boolean updateStudent(long courseId, int courseStudentNum);
     List<Course> getCourseByType(String courseType);
-    List<Course> getMyCourse(String studentId);
+    List<Course> getMyCourse(long studentId);
     Course selectCourseByName(String courseName);
 }

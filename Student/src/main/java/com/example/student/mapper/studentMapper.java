@@ -8,5 +8,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 @Mapper
 public interface studentMapper extends BaseMapper<Student> {
-    Student findStudentByStudentIdAndPassword(String studentId, String password);
+    Student findStudentByStudentIdAndPassword(long studentId, String password);
 }

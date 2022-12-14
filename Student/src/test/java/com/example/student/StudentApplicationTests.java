@@ -1,5 +1,7 @@
 package com.example.student;
 
+import com.example.commons.entity.Comments;
+import com.example.student.mapper.CommentsMapper;
 import com.example.student.service.IStudentService;
 import com.example.student.service.OssDownloadService;
 import com.example.student.service.RunCode;
@@ -18,6 +20,8 @@ class StudentApplicationTests {
     IStudentService iStudentService;
     @Autowired
     OssDownloadService ossDownloadService;
+    @Autowired
+    CommentsMapper commentsMapper;
 
     @Test
     void contextLoads() throws IOException, InterruptedException {
@@ -44,8 +48,8 @@ class StudentApplicationTests {
     }
     @Test
     void testGetChapterIdAndGetExperimentId() {
-        String chapterId = iStudentService.findChapterIdByExperimentId("1");
-        String courseId = iStudentService.findCourseIdByChapterId(chapterId);
+        long chapterId = iStudentService.findChapterIdByExperimentId(1);
+        long courseId = iStudentService.findCourseIdByChapterId(chapterId);
         System.out.println("章节id：" + chapterId);
         System.out.println("课程id：" + courseId);
     }
@@ -53,5 +57,20 @@ class StudentApplicationTests {
     void testUploadFile() throws IOException {
         String s = ossDownloadService.getFile("1course/1chapter/实验1/2022/12/14/Main.py");
         System.out.println(s);
+    }
+    @Test
+    void testComments() {
+        Comments comments = new Comments();
+        comments.setParentId(1);
+        comments.setStudentId(Long.parseLong("20201120417"));
+        comments.setCommentText("6666");
+        int insert = commentsMapper.insert(comments);
+        System.out.println(insert);
+    }
+    @Test
+    void testLikes() {
+        Integer likes = commentsMapper.getLikes(1);
+        commentsMapper.updateLikes(2,5);
+        System.out.println(commentsMapper.getLikes(2));
     }
 }
