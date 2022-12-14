@@ -8,4 +8,8 @@
     <select id="getExperimentByChapterId" resultMap="experiment">
         select * from experiment where chapter_id = #{chapterId}
     </select>
+
+    <select id="findChapterIdByExperimentId" resultType="java.lang.String">
+        select chapter_id from experiment where experiment_id = #{experimentId}
+    </select>
 </mapper>

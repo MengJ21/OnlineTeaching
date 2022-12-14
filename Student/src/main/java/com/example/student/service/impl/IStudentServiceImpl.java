@@ -153,6 +153,11 @@ public class IStudentServiceImpl extends ServiceImpl<studentMapper, Student> imp
     }
 
     @Override
+    public boolean createCodeFile(String experimentId, String studentId, String fileUrl, String fileName) {
+        return studentExperimentMapper.setCodeFile(experimentId,studentId,fileUrl,fileName);
+    }
+
+    @Override
     public StudentExperiment getMyExperiment(String experimentId, String studentId) {
         return studentExperimentMapper.ifStudentExperiment(experimentId,studentId);
     }
@@ -160,6 +165,16 @@ public class IStudentServiceImpl extends ServiceImpl<studentMapper, Student> imp
     @Override
     public Course selectCourseByName(String courseName) {
         return courseMapper.selectCourseByName(courseName);
+    }
+
+    @Override
+    public String findChapterIdByExperimentId(String experimentId) {
+        return experimentMapper.findChapterIdByExperimentId(experimentId);
+    }
+
+    @Override
+    public String findCourseIdByChapterId(String chapterId) {
+        return chapterMapper.getCourseIdByChapterId(chapterId);
     }
 
     public String upload(@RequestPart("file") MultipartFile multipartFile, @PathVariable String courseId, @PathVariable String chapterId, @PathVariable String experimentId){

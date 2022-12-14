@@ -10,4 +10,8 @@
     <update id="setFile">
         update student_experiment set file_url = #{fileUrl} , file_Name = #{fileName} where student_id = #{studentId} and experiment_id = #{experimentId}
     </update>
+    <update id="setCodeFile">
+        update student_experiment set code_file_path = #{fileUrl} , code_file_name = #{fileName} where student_id = #{studentId} and experiment_id = #{experimentId}
+    </update>
+
 </mapper>

@@ -9,6 +9,26 @@ public class ProcessResult {
 
     private String output;
 
+    public ProcessResult(int exitCode, String output, String codeFilePath) {
+        this.exitCode = exitCode;
+        this.output = output;
+        this.codeFilePath = codeFilePath;
+    }
+
+    public String getCodeFilePath() {
+        return codeFilePath;
+    }
+
+    public void setCodeFilePath(String codeFilePath) {
+        this.codeFilePath = codeFilePath;
+    }
+
+    private String codeFilePath;
+
+    public void setExitCode(int exitCode) {
+        this.exitCode = exitCode;
+    }
+
     public ProcessResult(int exitCode, String output) {
         this.exitCode = exitCode;
         this.output = output;

@@ -15,7 +15,43 @@ public class StudentExperiment {
     private String fileUrl;
     private String fileName;
     private int score;
+
+    public StudentExperiment() {
+    }
+
     private Boolean state;
+    private String codeFilePath;
+
+    public String getCodeFilePath() {
+        return codeFilePath;
+    }
+
+    public void setCodeFilePath(String codeFilePath) {
+        this.codeFilePath = codeFilePath;
+    }
+
+    public String getCodeFileName() {
+        return codeFileName;
+    }
+
+    public void setCodeFileName(String codeFileName) {
+        this.codeFileName = codeFileName;
+    }
+
+    public StudentExperiment(String studentExperimentId, String experimentId, String studentId, String experiment_content, String fileUrl, String fileName, int score, Boolean state, String codeFilePath, String codeFileName) {
+        this.studentExperimentId = studentExperimentId;
+        this.experimentId = experimentId;
+        this.studentId = studentId;
+        this.experiment_content = experiment_content;
+        this.fileUrl = fileUrl;
+        this.fileName = fileName;
+        this.score = score;
+        this.state = state;
+        this.codeFilePath = codeFilePath;
+        this.codeFileName = codeFileName;
+    }
+
+    private String codeFileName;
 
     public Boolean getState() {
         return state;

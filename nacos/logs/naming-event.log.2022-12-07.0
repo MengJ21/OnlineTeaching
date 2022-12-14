@@ -1,36 +1,56 @@
-2022-12-07 17:42:19,393 ERROR [UPDATE-DOMAIN] Exception while taking item from LinkedBlockingDeque.
+2022-12-07 12:16:01,075 INFO DEFAULT_GROUP@@Student {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.103.53.1:8082:unknown:DEFAULT_1.0_true_false_DEFAULT]
 
-2022-12-07 18:07:52,699 INFO DEFAULT_GROUP@@Teacher {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.43.196:8081:unknown:DEFAULT_1.0_true_false_DEFAULT]
+2022-12-07 12:16:01,077 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Student, ips: 10.103.53.1:8082_true,
 
-2022-12-07 18:07:52,700 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Teacher, ips: 192.168.43.196:8081_true,
+2022-12-07 12:17:00,422 INFO DEFAULT_GROUP@@Student {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.103.53.1:8082:unknown:DEFAULT_1.0_true_false_DEFAULT]
 
-2022-12-07 20:32:47,375 INFO DEFAULT_GROUP@@Teacher {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.43.196:8081:unknown:DEFAULT_1.0_true_false_DEFAULT]
+2022-12-07 12:17:00,422 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Student, ips: 
 
-2022-12-07 20:32:47,376 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Teacher, ips: 
+2022-12-07 12:17:14,791 INFO DEFAULT_GROUP@@Student {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.103.53.1:8082:unknown:DEFAULT_1.0_true_false_DEFAULT]
 
-2022-12-07 21:33:49,459 INFO DEFAULT_GROUP@@Teacher {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.43.196:8081:unknown:DEFAULT_1.0_true_false_DEFAULT]
+2022-12-07 12:17:14,791 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Student, ips: 10.103.53.1:8082_true,
 
-2022-12-07 21:33:49,460 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Teacher, ips: 192.168.43.196:8081_true,
+2022-12-07 13:17:02,004 INFO {POS} {IP-DISABLED} valid: 10.103.53.1:8082@DEFAULT@DEFAULT_GROUP@@Student, region: unknown, msg: client timeout after 15000, last beat: 1670388963565
 
-2022-12-07 21:34:30,288 INFO DEFAULT_GROUP@@Teacher {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.43.196:8081:unknown:DEFAULT_1.0_true_false_DEFAULT]
+2022-12-07 13:17:02,048 INFO DEFAULT_GROUP@@Student {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.103.53.1:8082:unknown:DEFAULT_1.0_false_false_DEFAULT]
 
-2022-12-07 21:34:30,289 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Teacher, ips: 
+2022-12-07 13:17:02,048 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Student, ips: 
 
-2022-12-07 21:34:50,211 INFO DEFAULT_GROUP@@Teacher {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.43.196:8081:unknown:DEFAULT_1.0_true_false_DEFAULT]
+2022-12-07 13:17:02,352 INFO DEFAULT_GROUP@@Student {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.103.53.1:8082:unknown:DEFAULT_1.0_true_false_DEFAULT]
 
-2022-12-07 21:34:50,211 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Teacher, ips: 192.168.43.196:8081_true,
+2022-12-07 13:17:02,352 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Student, ips: 10.103.53.1:8082_true,
 
-2022-12-07 21:37:05,742 INFO DEFAULT_GROUP@@Student {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.43.196:8082:unknown:DEFAULT_1.0_true_false_DEFAULT]
+2022-12-07 14:01:36,496 INFO DEFAULT_GROUP@@Student {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.103.53.1:8082:unknown:DEFAULT_1.0_true_false_DEFAULT]
 
-2022-12-07 21:37:05,742 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Student, ips: 192.168.43.196:8082_true,
+2022-12-07 14:01:36,500 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Student, ips: 10.103.53.1:8082_true,
 
-2022-12-07 21:37:12,674 INFO DEFAULT_GROUP@@Student {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.43.196:8082:unknown:DEFAULT_1.0_true_false_DEFAULT]
+2022-12-07 20:07:13,109 INFO {POS} {IP-DISABLED} valid: 10.103.53.1:8082@DEFAULT@DEFAULT_GROUP@@Student, region: unknown, msg: client timeout after 15000, last beat: 1670414633331
 
-2022-12-07 21:37:12,674 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Student, ips: 
+2022-12-07 20:07:13,342 INFO DEFAULT_GROUP@@Student {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.103.53.1:8082:unknown:DEFAULT_1.0_false_false_DEFAULT]
 
-2022-12-07 21:37:12,714 INFO DEFAULT_GROUP@@Teacher {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.43.196:8081:unknown:DEFAULT_1.0_true_false_DEFAULT]
+2022-12-07 20:07:13,342 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Student, ips: 
 
-2022-12-07 21:37:12,714 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Teacher, ips: 
+2022-12-07 20:07:15,283 INFO DEFAULT_GROUP@@Student {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.103.53.1:8082:unknown:DEFAULT_1.0_true_false_DEFAULT]
 
-2022-12-07 22:07:09,867 ERROR [UPDATE-DOMAIN] Exception while taking item from LinkedBlockingDeque.
+2022-12-07 20:07:15,283 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Student, ips: 10.103.53.1:8082_true,
+
+2022-12-07 23:08:01,491 INFO {POS} {IP-DISABLED} valid: 10.103.53.1:8082@DEFAULT@DEFAULT_GROUP@@Student, region: unknown, msg: client timeout after 15000, last beat: 1670425647323
+
+2022-12-07 23:08:01,608 INFO DEFAULT_GROUP@@Student {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.103.53.1:8082:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-12-07 23:08:01,609 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Student, ips: 
+
+2022-12-07 23:08:01,990 INFO DEFAULT_GROUP@@Student {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.103.53.1:8082:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-12-07 23:08:01,990 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Student, ips: 10.103.53.1:8082_true,
+
+2022-12-07 23:56:51,923 INFO {POS} {IP-DISABLED} valid: 10.103.53.1:8082@DEFAULT@DEFAULT_GROUP@@Student, region: unknown, msg: client timeout after 15000, last beat: 1670427323804
+
+2022-12-07 23:56:51,931 INFO DEFAULT_GROUP@@Student {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.103.53.1:8082:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-12-07 23:56:51,931 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Student, ips: 
+
+2022-12-07 23:56:51,934 INFO DEFAULT_GROUP@@Student {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.103.53.1:8082:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-12-07 23:56:51,934 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Student, ips: 10.103.53.1:8082_true,
 

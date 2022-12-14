@@ -25,6 +25,9 @@ public interface IStudentService extends IService<Student> {
     public experiment getExperimentInfo(@PathVariable String experimentId);
     public StudentExperiment ifStudentExperiment(String experimentId,String studentId);
     boolean createFile(String experimentId,String studentId,String fileUrl,String fileName);
+    boolean createCodeFile(String experimentId,String studentId,String fileUrl,String fileName);
     public StudentExperiment getMyExperiment(String experimentId,String studentId);
     public Course selectCourseByName(@PathVariable String courseName);
+    String findChapterIdByExperimentId(String experimentId);
+    String findCourseIdByChapterId(String chapterId);
 }

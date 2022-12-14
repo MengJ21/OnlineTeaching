@@ -12,4 +12,5 @@ import java.util.List;
 @Mapper
 public interface chapterMapper extends BaseMapper<chapter> {
     List<chapter> getChapterByCourseId(String courseId);
+    String getCourseIdByChapterId(String chapterId);
 }

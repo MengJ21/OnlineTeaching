@@ -10,4 +10,5 @@ import org.springframework.stereotype.Repository;
 public interface studentExperimentMapper extends BaseMapper<StudentExperiment> {
     StudentExperiment ifStudentExperiment(String experimentId,String studentId);
     boolean setFile(String experimentId,String studentId,String fileUrl,String fileName);
+    boolean setCodeFile(String experimentId,String studentId,String fileUrl,String fileName);
 }

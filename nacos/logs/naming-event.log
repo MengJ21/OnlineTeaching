@@ -1,120 +1,28 @@
-2022-12-12 19:58:23,948 INFO DEFAULT_GROUP@@Admin {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.100.239.118:8083:unknown:DEFAULT_1.0_true_false_DEFAULT]
+2022-12-14 11:03:32,106 INFO DEFAULT_GROUP@@Student {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.103.53.1:8888:unknown:DEFAULT_1.0_true_false_DEFAULT]
 
-2022-12-12 19:58:23,951 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Admin, ips: 10.100.239.118:8083_true,
+2022-12-14 11:03:32,108 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Student, ips: 10.103.53.1:8888_true,
 
-2022-12-12 20:09:31,536 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Admin, ips: 10.100.239.118:8083_true,
+2022-12-14 11:45:57,904 INFO DEFAULT_GROUP@@Student {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.103.53.1:8888:unknown:DEFAULT_1.0_true_false_DEFAULT]
 
-2022-12-12 20:11:56,914 INFO DEFAULT_GROUP@@Admin {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.100.239.118:8083:unknown:DEFAULT_1.0_true_false_DEFAULT]
+2022-12-14 11:45:57,904 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Student, ips: 
 
-2022-12-12 20:11:56,914 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Admin, ips: 
+2022-12-14 11:46:14,307 INFO DEFAULT_GROUP@@Student {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.103.53.1:8888:unknown:DEFAULT_1.0_true_false_DEFAULT]
 
-2022-12-12 20:12:08,366 INFO DEFAULT_GROUP@@Admin {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.100.239.118:8083:unknown:DEFAULT_1.0_true_false_DEFAULT]
+2022-12-14 11:46:14,307 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Student, ips: 10.103.53.1:8888_true,
 
-2022-12-12 20:12:08,366 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Admin, ips: 10.100.239.118:8083_true,
+2022-12-14 12:38:10,142 INFO DEFAULT_GROUP@@Student {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.103.53.1:8888:unknown:DEFAULT_1.0_true_false_DEFAULT]
 
-2022-12-12 20:13:53,812 INFO DEFAULT_GROUP@@Admin {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.100.239.118:8083:unknown:DEFAULT_1.0_true_false_DEFAULT]
+2022-12-14 12:38:10,142 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Student, ips: 
 
-2022-12-12 20:13:53,812 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Admin, ips: 
+2022-12-14 12:38:26,111 INFO DEFAULT_GROUP@@Student {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.103.53.1:8888:unknown:DEFAULT_1.0_true_false_DEFAULT]
 
-2022-12-12 20:14:14,845 INFO DEFAULT_GROUP@@Admin {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.100.239.118:8083:unknown:DEFAULT_1.0_true_false_DEFAULT]
+2022-12-14 12:38:26,111 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Student, ips: 10.103.53.1:8888_true,
 
-2022-12-12 20:14:14,845 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Admin, ips: 10.100.239.118:8083_true,
+2022-12-14 12:39:52,770 INFO DEFAULT_GROUP@@Student {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.103.53.1:8888:unknown:DEFAULT_1.0_true_false_DEFAULT]
 
-2022-12-12 20:14:30,356 INFO {POS} {IP-DISABLED} valid: 10.100.239.118:8083@DEFAULT@DEFAULT_GROUP@@Admin, region: unknown, msg: client timeout after 15000, last beat: 1670847254845
+2022-12-14 12:39:52,770 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Student, ips: 
 
-2022-12-12 20:14:32,891 INFO service: DEFAULT_GROUP@@Admin {POS} {IP-ENABLED} valid: 10.100.239.118:8083@DEFAULT, region: unknown, msg: client beat ok
+2022-12-14 17:13:47,663 INFO DEFAULT_GROUP@@Student {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.103.53.1:8888:unknown:DEFAULT_1.0_true_false_DEFAULT]
 
-2022-12-12 20:19:14,382 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Admin, ips: 10.100.239.118:8083_true,
-
-2022-12-12 20:20:28,107 INFO DEFAULT_GROUP@@Admin {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.100.239.118:8083:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2022-12-12 20:20:28,107 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Admin, ips: 
-
-2022-12-12 20:20:46,100 INFO DEFAULT_GROUP@@Admin {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.100.239.118:8083:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2022-12-12 20:20:46,100 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Admin, ips: 10.100.239.118:8083_true,
-
-2022-12-12 20:24:46,434 INFO DEFAULT_GROUP@@Admin {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.100.239.118:8083:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2022-12-12 20:24:46,434 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Admin, ips: 
-
-2022-12-12 20:25:06,662 INFO DEFAULT_GROUP@@Admin {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.100.239.118:8083:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2022-12-12 20:25:06,663 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Admin, ips: 10.100.239.118:8083_true,
-
-2022-12-12 20:26:16,494 INFO DEFAULT_GROUP@@Admin {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.100.239.118:8083:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2022-12-12 20:26:16,494 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Admin, ips: 
-
-2022-12-12 20:26:32,213 INFO DEFAULT_GROUP@@Admin {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.100.239.118:8083:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2022-12-12 20:26:32,213 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Admin, ips: 10.100.239.118:8083_true,
-
-2022-12-12 20:28:06,584 INFO {POS} {IP-DISABLED} valid: 10.100.239.118:8083@DEFAULT@DEFAULT_GROUP@@Admin, region: unknown, msg: client timeout after 15000, last beat: 1670848067337
-
-2022-12-12 20:28:14,126 INFO DEFAULT_GROUP@@Teacher {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.100.239.118:8081:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2022-12-12 20:28:14,126 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Teacher, ips: 10.100.239.118:8081_true,
-
-2022-12-12 20:28:21,797 INFO DEFAULT_GROUP@@Admin {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.100.239.118:8083:unknown:DEFAULT_1.0_false_false_DEFAULT]
-
-2022-12-12 20:28:21,797 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Admin, ips: 
-
-2022-12-12 20:29:48,835 INFO DEFAULT_GROUP@@Student {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.100.239.118:8888:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2022-12-12 20:29:48,835 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Student, ips: 10.100.239.118:8888_true,
-
-2022-12-12 20:33:04,124 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Teacher, ips: 10.100.239.118:8081_true,
-
-2022-12-12 20:48:01,324 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Teacher, ips: 10.100.239.118:8081_true,
-
-2022-12-12 20:49:47,459 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Teacher, ips: 10.100.239.118:8081_true,
-
-2022-12-12 20:52:35,548 INFO DEFAULT_GROUP@@Teacher {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.100.239.118:8081:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2022-12-12 20:52:35,548 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Teacher, ips: 
-
-2022-12-12 20:52:47,246 INFO DEFAULT_GROUP@@Teacher {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.100.239.118:8081:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2022-12-12 20:52:47,246 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Teacher, ips: 10.100.239.118:8081_true,
-
-2022-12-12 20:55:56,580 INFO DEFAULT_GROUP@@Admin {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.100.239.118:8083:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2022-12-12 20:55:56,580 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Admin, ips: 10.100.239.118:8083_true,
-
-2022-12-12 20:56:11,602 INFO {POS} {IP-DISABLED} valid: 10.100.239.118:8083@DEFAULT@DEFAULT_GROUP@@Admin, region: unknown, msg: client timeout after 15000, last beat: 1670849756579
-
-2022-12-12 20:56:12,990 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Teacher, ips: 10.100.239.118:8081_true,
-
-2022-12-12 20:56:26,634 INFO DEFAULT_GROUP@@Admin {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.100.239.118:8083:unknown:DEFAULT_1.0_false_false_DEFAULT]
-
-2022-12-12 20:56:26,634 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Admin, ips: 
-
-2022-12-12 20:57:08,379 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Teacher, ips: 10.100.239.118:8081_true,
-
-2022-12-12 20:57:26,719 INFO {POS} {IP-DISABLED} valid: 10.100.239.118:8081@DEFAULT@DEFAULT_GROUP@@Teacher, region: unknown, msg: client timeout after 15000, last beat: 1670849828378
-
-2022-12-12 20:57:28,284 INFO service: DEFAULT_GROUP@@Teacher {POS} {IP-ENABLED} valid: 10.100.239.118:8081@DEFAULT, region: unknown, msg: client beat ok
-
-2022-12-12 21:00:46,320 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Teacher, ips: 10.100.239.118:8081_true,
-
-2022-12-12 21:06:26,504 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Student, ips: 10.100.239.118:8888_true,
-
-2022-12-12 21:09:09,746 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Student, ips: 10.100.239.118:8888_true,
-
-2022-12-12 21:10:01,349 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Student, ips: 10.100.239.118:8888_true,
-
-2022-12-12 21:10:36,560 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Student, ips: 10.100.239.118:8888_true,
-
-2022-12-12 21:11:43,456 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Student, ips: 10.100.239.118:8888_true,
-
-2022-12-12 21:16:43,775 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Student, ips: 10.100.239.118:8888_true,
-
-2022-12-12 21:20:46,655 INFO DEFAULT_GROUP@@Teacher {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.100.239.118:8081:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2022-12-12 21:20:46,655 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Teacher, ips: 
-
-2022-12-12 21:20:58,465 INFO DEFAULT_GROUP@@Teacher {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.100.239.118:8081:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2022-12-12 21:20:58,465 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Teacher, ips: 10.100.239.118:8081_true,
+2022-12-14 17:13:47,665 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@Student, ips: 10.103.53.1:8888_true,
 

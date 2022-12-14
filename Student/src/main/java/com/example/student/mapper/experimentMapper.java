@@ -11,4 +11,5 @@ import java.util.List;
 @Mapper
 public interface experimentMapper extends BaseMapper<experiment> {
     List<experiment> getExperimentByChapterId(String chapterId);
+    String findChapterIdByExperimentId(String experimentId);
 }

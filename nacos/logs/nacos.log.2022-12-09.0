@@ -1,0 +1,310 @@
+2022-12-09 12:51:49,075 INFO Starting Nacos v1.4.4 using Java 1.8.0_341 on LAPTOP-M31T7H7I with PID 30156 (C:\nacos\nacos\target\nacos-server.jar started by 86151 in C:\nacos\nacos\bin)
+
+2022-12-09 12:51:49,077 INFO The following 1 profile is active: "standalone"
+
+2022-12-09 12:51:51,341 INFO Tomcat initialized with port(s): 8848 (http)
+
+2022-12-09 12:51:51,342 INFO Loaded Apache Tomcat Native library [1.2.33] using APR version [1.7.0].
+
+2022-12-09 12:51:51,343 INFO APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+
+2022-12-09 12:51:51,343 INFO APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+
+2022-12-09 12:51:51,345 INFO OpenSSL successfully initialized [OpenSSL 1.1.1o  3 May 2022]
+
+2022-12-09 12:51:51,354 INFO Starting service [Tomcat]
+
+2022-12-09 12:51:51,354 INFO Starting Servlet engine: [Apache Tomcat/9.0.60]
+
+2022-12-09 12:51:51,708 INFO At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+
+2022-12-09 12:51:51,760 INFO Initializing Spring embedded WebApplicationContext
+
+2022-12-09 12:51:51,760 INFO Root WebApplicationContext: initialization completed in 2620 ms
+
+2022-12-09 12:51:52,176 INFO HikariPool-1 - Starting...
+
+2022-12-09 12:51:52,178 WARN Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+
+2022-12-09 12:51:52,422 INFO HikariPool-1 - Driver does not support get/set network timeout for connections. (Feature not implemented: No details.)
+
+2022-12-09 12:51:52,425 INFO HikariPool-1 - Start completed.
+
+2022-12-09 12:51:53,323 INFO Nacos-related cluster resource initialization
+
+2022-12-09 12:51:53,332 INFO The cluster resource is initialized
+
+2022-12-09 12:51:53,532 INFO Reflections took 50 ms to scan 1 urls, producing 4 keys and 6 values 
+
+2022-12-09 12:51:53,554 INFO Reflections took 4 ms to scan 1 urls, producing 6 keys and 26 values 
+
+2022-12-09 12:51:53,568 INFO Reflections took 5 ms to scan 1 urls, producing 3 keys and 15 values 
+
+2022-12-09 12:51:53,577 INFO Reflections took 2 ms to scan 1 urls, producing 2 keys and 12 values 
+
+2022-12-09 12:51:54,266 INFO Adding welcome page: class path resource [static/index.html]
+
+2022-12-09 12:51:54,581 WARN You are asking Spring Security to ignore Ant [pattern='/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+
+2022-12-09 12:51:54,582 INFO Will secure Ant [pattern='/**'] with []
+
+2022-12-09 12:51:54,610 INFO Will not secure any request
+
+2022-12-09 12:51:54,632 INFO Exposing 1 endpoint(s) beneath base path '/actuator'
+
+2022-12-09 12:51:54,677 INFO Tomcat started on port(s): 8848 (http) with context path '/nacos'
+
+2022-12-09 12:51:54,697 INFO Started Nacos in 6.663 seconds (JVM running for 7.229)
+
+2022-12-09 12:51:54,697 INFO Nacos started successfully in stand alone mode. use embedded storage
+
+2022-12-09 12:53:40,452 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+
+2022-12-09 12:53:40,452 INFO Initializing Servlet 'dispatcherServlet'
+
+2022-12-09 12:53:40,453 INFO Completed initialization in 1 ms
+
+2022-12-09 13:01:53,697 INFO [capacityManagement] start correct usage
+
+2022-12-09 13:01:53,712 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-12-09 13:01:53,774 WARN clearConfigHistory start
+
+2022-12-09 13:11:53,718 INFO [capacityManagement] start correct usage
+
+2022-12-09 13:11:53,718 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-12-09 13:11:53,793 WARN clearConfigHistory start
+
+2022-12-09 13:21:53,729 INFO [capacityManagement] start correct usage
+
+2022-12-09 13:21:53,729 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-12-09 13:21:53,807 WARN clearConfigHistory start
+
+2022-12-09 13:31:53,737 INFO [capacityManagement] start correct usage
+
+2022-12-09 13:31:53,737 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-12-09 13:31:53,815 WARN clearConfigHistory start
+
+2022-12-09 13:41:53,749 INFO [capacityManagement] start correct usage
+
+2022-12-09 13:41:53,749 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-12-09 13:41:53,825 WARN clearConfigHistory start
+
+2022-12-09 13:51:53,759 INFO [capacityManagement] start correct usage
+
+2022-12-09 13:51:53,759 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-12-09 13:51:53,839 WARN clearConfigHistory start
+
+2022-12-09 14:01:53,770 INFO [capacityManagement] start correct usage
+
+2022-12-09 14:01:53,770 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-12-09 14:01:53,847 WARN clearConfigHistory start
+
+2022-12-09 14:11:53,781 INFO [capacityManagement] start correct usage
+
+2022-12-09 14:11:53,781 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-12-09 14:11:53,861 WARN clearConfigHistory start
+
+2022-12-09 14:21:53,783 INFO [capacityManagement] start correct usage
+
+2022-12-09 14:21:53,783 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-12-09 14:21:53,877 WARN clearConfigHistory start
+
+2022-12-09 14:31:53,791 INFO [capacityManagement] start correct usage
+
+2022-12-09 14:31:53,791 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-12-09 14:31:53,884 WARN clearConfigHistory start
+
+2022-12-09 18:46:29,662 INFO Starting Nacos v1.4.4 using Java 1.8.0_341 on LAPTOP-M31T7H7I with PID 11228 (C:\nacos\nacos\target\nacos-server.jar started by 86151 in C:\nacos\nacos\bin)
+
+2022-12-09 18:46:29,663 INFO The following 1 profile is active: "standalone"
+
+2022-12-09 18:46:31,654 INFO Tomcat initialized with port(s): 8848 (http)
+
+2022-12-09 18:46:31,656 INFO Loaded Apache Tomcat Native library [1.2.33] using APR version [1.7.0].
+
+2022-12-09 18:46:31,656 INFO APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+
+2022-12-09 18:46:31,657 INFO APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+
+2022-12-09 18:46:31,659 INFO OpenSSL successfully initialized [OpenSSL 1.1.1o  3 May 2022]
+
+2022-12-09 18:46:31,667 INFO Starting service [Tomcat]
+
+2022-12-09 18:46:31,668 INFO Starting Servlet engine: [Apache Tomcat/9.0.60]
+
+2022-12-09 18:46:32,003 INFO At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+
+2022-12-09 18:46:32,053 INFO Initializing Spring embedded WebApplicationContext
+
+2022-12-09 18:46:32,053 INFO Root WebApplicationContext: initialization completed in 2345 ms
+
+2022-12-09 18:46:32,431 INFO HikariPool-1 - Starting...
+
+2022-12-09 18:46:32,433 WARN Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+
+2022-12-09 18:46:32,660 INFO HikariPool-1 - Driver does not support get/set network timeout for connections. (Feature not implemented: No details.)
+
+2022-12-09 18:46:32,662 INFO HikariPool-1 - Start completed.
+
+2022-12-09 18:46:33,550 INFO Nacos-related cluster resource initialization
+
+2022-12-09 18:46:33,558 INFO The cluster resource is initialized
+
+2022-12-09 18:46:33,741 INFO Reflections took 47 ms to scan 1 urls, producing 4 keys and 6 values 
+
+2022-12-09 18:46:33,762 INFO Reflections took 4 ms to scan 1 urls, producing 6 keys and 26 values 
+
+2022-12-09 18:46:33,775 INFO Reflections took 4 ms to scan 1 urls, producing 3 keys and 15 values 
+
+2022-12-09 18:46:33,782 INFO Reflections took 2 ms to scan 1 urls, producing 2 keys and 12 values 
+
+2022-12-09 18:46:34,378 INFO Adding welcome page: class path resource [static/index.html]
+
+2022-12-09 18:46:34,655 WARN You are asking Spring Security to ignore Ant [pattern='/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+
+2022-12-09 18:46:34,655 INFO Will secure Ant [pattern='/**'] with []
+
+2022-12-09 18:46:34,676 INFO Will not secure any request
+
+2022-12-09 18:46:34,694 INFO Exposing 1 endpoint(s) beneath base path '/actuator'
+
+2022-12-09 18:46:34,737 INFO Tomcat started on port(s): 8848 (http) with context path '/nacos'
+
+2022-12-09 18:46:34,753 INFO Started Nacos in 6.026 seconds (JVM running for 6.571)
+
+2022-12-09 18:46:34,753 INFO Nacos started successfully in stand alone mode. use embedded storage
+
+2022-12-09 18:56:33,892 INFO [capacityManagement] start correct usage
+
+2022-12-09 18:56:33,911 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-12-09 18:56:33,971 WARN clearConfigHistory start
+
+2022-12-09 19:06:33,919 INFO [capacityManagement] start correct usage
+
+2022-12-09 19:06:33,919 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-12-09 19:06:33,981 WARN clearConfigHistory start
+
+2022-12-09 19:16:33,923 INFO [capacityManagement] start correct usage
+
+2022-12-09 19:16:33,923 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-12-09 19:16:33,987 WARN clearConfigHistory start
+
+2022-12-09 19:21:49,270 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+
+2022-12-09 19:21:49,271 INFO Initializing Servlet 'dispatcherServlet'
+
+2022-12-09 19:21:49,278 INFO Completed initialization in 7 ms
+
+2022-12-09 19:26:33,934 INFO [capacityManagement] start correct usage
+
+2022-12-09 19:26:33,935 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-12-09 19:26:33,996 WARN clearConfigHistory start
+
+2022-12-09 19:36:33,942 INFO [capacityManagement] start correct usage
+
+2022-12-09 19:36:33,942 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-12-09 19:36:34,004 WARN clearConfigHistory start
+
+2022-12-09 19:49:21,412 WARN HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m47s826ms852µs100ns).
+
+2022-12-09 19:49:24,631 WARN clearConfigHistory start
+
+2022-12-09 19:50:51,757 INFO [capacityManagement] start correct usage
+
+2022-12-09 19:50:51,758 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-12-09 19:59:24,635 WARN clearConfigHistory start
+
+2022-12-09 20:00:51,766 INFO [capacityManagement] start correct usage
+
+2022-12-09 20:00:51,766 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-12-09 20:12:59,758 WARN clearConfigHistory start
+
+2022-12-09 20:13:16,103 WARN HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m24s371ms172µs800ns).
+
+2022-12-09 20:17:46,135 INFO [capacityManagement] start correct usage
+
+2022-12-09 20:17:46,136 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-12-09 20:22:59,762 WARN clearConfigHistory start
+
+2022-12-09 20:35:03,324 WARN clearConfigHistory start
+
+2022-12-09 20:35:08,997 INFO [capacityManagement] start correct usage
+
+2022-12-09 20:35:08,997 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-12-09 20:35:09,182 WARN HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m52s870ms325µs100ns).
+
+2022-12-09 20:45:03,326 WARN clearConfigHistory start
+
+2022-12-09 20:45:09,011 INFO [capacityManagement] start correct usage
+
+2022-12-09 20:45:09,011 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-12-09 20:49:59,578 WARN HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m20s174ms808µs100ns).
+
+2022-12-09 20:55:03,331 WARN clearConfigHistory start
+
+2022-12-09 20:55:59,188 INFO [capacityManagement] start correct usage
+
+2022-12-09 20:55:59,188 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-12-09 22:06:21,926 WARN HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h4m52s156ms322µs600ns).
+
+2022-12-09 22:06:26,820 WARN clearConfigHistory start
+
+2022-12-09 23:02:32,709 WARN clearConfigHistory start
+
+2022-12-09 23:02:47,817 WARN HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=56m25s890ms782µs900ns).
+
+2022-12-09 23:06:17,238 INFO [capacityManagement] start correct usage
+
+2022-12-09 23:06:17,238 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-12-09 23:12:32,720 WARN clearConfigHistory start
+
+2022-12-09 23:16:17,239 INFO [capacityManagement] start correct usage
+
+2022-12-09 23:16:17,239 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-12-09 23:22:32,722 WARN clearConfigHistory start
+
+2022-12-09 23:26:17,248 INFO [capacityManagement] start correct usage
+
+2022-12-09 23:26:17,248 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-12-09 23:32:32,735 WARN clearConfigHistory start
+
+2022-12-09 23:36:17,261 INFO [capacityManagement] start correct usage
+
+2022-12-09 23:36:17,261 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-12-09 23:42:32,738 WARN clearConfigHistory start
+
+2022-12-09 23:46:17,266 INFO [capacityManagement] start correct usage
+
+2022-12-09 23:46:17,267 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-12-09 23:52:32,739 WARN clearConfigHistory start
+
+2022-12-09 23:56:17,273 INFO [capacityManagement] start correct usage
+
+2022-12-09 23:56:17,273 INFO [capacityManagement] end correct usage, cost: 0s
+

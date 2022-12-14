@@ -8,4 +8,7 @@
     <select id="getChapterByCourseId" resultMap="chapter">
         select * from chapter where course_id = #{courseId}
     </select>
+    <select id="getCourseIdByChapterId" resultType="java.lang.String">
+        select course_id from chapter where chapter_id = #{chapterId}
+    </select>
 </mapper>
