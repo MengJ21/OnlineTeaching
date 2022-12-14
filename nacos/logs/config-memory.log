@@ -12920,3 +12920,21 @@
 
 2022-12-14 22:31:15,817 INFO groupCount = 0, subscriberClientCount = 0, subscriberCount = 0
 
+2022-12-14 22:31:25,813 INFO [long-pulling] client count 0
+
+2022-12-14 22:31:25,829 INFO groupCount = 0, subscriberClientCount = 0, subscriberCount = 0
+
+2022-12-14 22:31:25,829 INFO toNotifyTaskSize = 0
+
+2022-12-14 22:31:35,826 INFO [long-pulling] client count 0
+
+2022-12-14 22:31:35,841 INFO groupCount = 0, subscriberClientCount = 0, subscriberCount = 0
+
+2022-12-14 22:31:35,841 INFO toNotifyTaskSize = 0
+
+2022-12-14 22:31:45,835 INFO [long-pulling] client count 0
+
+2022-12-14 22:31:45,850 INFO groupCount = 0, subscriberClientCount = 0, subscriberCount = 0
+
+2022-12-14 22:31:45,850 INFO toNotifyTaskSize = 0
+
